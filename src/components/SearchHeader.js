@@ -6,6 +6,7 @@ import FlightSearch from './FlightSearch';
 export default function SearchHeader() {
   return (
     <Paper 
+      component="header"
       elevation={0}
       sx={{ 
         width: '100%',

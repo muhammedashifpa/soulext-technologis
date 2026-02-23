@@ -20,9 +20,9 @@ export default function Home() {
         alignItems: 'center',
       }}
     >
-      <Container   sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+      {/* <Container   sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
       <SearchHeader />
-      </Container>
+      </Container> */}
     </Box>
     "dfasdfa"
     </>
