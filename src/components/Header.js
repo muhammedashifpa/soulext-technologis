@@ -22,9 +22,9 @@ export default function Header() {
       }}
     >
       <Typography 
-        variant="h4" 
+        variant="h5" 
         sx={{ 
-          fontWeight: 800, 
+          fontWeight: 700, 
           color: 'primary.main',
           letterSpacing: '-0.02em',
           cursor: 'pointer'

@@ -22,9 +22,9 @@ import PersonIcon from '@mui/icons-material/Person';
 import SyncAltIcon from '@mui/icons-material/SyncAlt';
 
 export default function FlightSearch() {
-  const [flightType, setFlightType] = React.useState('one-way');
-  const [flightClass, setFlightClass] = React.useState('economy');
-  const [tripType, setTripType] = React.useState('domestic');
+  const [flightType, setFlightType] = React.useState('');
+  const [flightClass, setFlightClass] = React.useState('');
+  const [tripType, setTripType] = React.useState('');
   const [value, setValue] = React.useState([dayjs(), dayjs().add(7, 'day')]);
 
   const handleFlightTypeChange = (event) => setFlightType(event.target.value);
@@ -50,11 +50,16 @@ export default function FlightSearch() {
                 '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'primary.main' },
                 '& .MuiSelect-select': { display: 'flex', alignItems: 'center', pr: '14px !important' }
               }}
-              renderValue={(value) => (
-                <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                  {value === 'one-way' ? 'One way' : 'Round trip'}
-                </Box>
-              )}
+              renderValue={(value) => {
+                if (!value) {
+                  return <Box sx={{ display: 'flex', alignItems: 'center' }}>Select Flights</Box>;
+                }
+                return (
+                  <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                    {value === 'one-way' ? 'One way' : 'Round trip'}
+                  </Box>
+                );
+              }}
             >
               <MenuItem value="one-way">One way</MenuItem>
               <MenuItem value="round-trip">Round trip</MenuItem>
@@ -76,11 +81,16 @@ export default function FlightSearch() {
                 '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'primary.main' },
                 '& .MuiSelect-select': { display: 'flex', alignItems: 'center', pr: '14px !important' }
               }}
-              renderValue={(value) => (
-                <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                  {value.charAt(0).toUpperCase() + value.slice(1)}
-                </Box>
-              )}
+              renderValue={(value) => {
+                if (!value) {
+                  return <Box sx={{ display: 'flex', alignItems: 'center' }}>Select Class</Box>;
+                }
+                return (
+                  <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                    {value.charAt(0).toUpperCase() + value.slice(1)}
+                  </Box>
+                );
+              }}
             >
               <MenuItem value="economy">Economy</MenuItem>
               <MenuItem value="business">Business</MenuItem>
@@ -103,11 +113,16 @@ export default function FlightSearch() {
                 '&:hover .MuiOutlinedInput-notchedOutline': { borderColor: 'primary.main' },
                 '& .MuiSelect-select': { display: 'flex', alignItems: 'center', pr: '14px !important' }
               }}
-              renderValue={(value) => (
-                <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                  {value.charAt(0).toUpperCase() + value.slice(1)}
-                </Box>
-              )}
+              renderValue={(value) => {
+                if (!value) {
+                  return <Box sx={{ display: 'flex', alignItems: 'center' }}>Select Trip</Box>;
+                }
+                return (
+                  <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                    {value.charAt(0).toUpperCase() + value.slice(1)}
+                  </Box>
+                );
+              }}
             >
               <MenuItem value="domestic">Domestic</MenuItem>
               <MenuItem value="international">International</MenuItem>
@@ -172,7 +187,7 @@ export default function FlightSearch() {
             slotProps={{
               textField: {
                 variant: 'outlined',
-                label: 'Departure Date',
+                // label: 'Departure Date',
                 InputProps: {
                   endAdornment: null
                 },
