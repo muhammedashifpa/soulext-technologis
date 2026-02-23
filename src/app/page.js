@@ -7,27 +7,25 @@ import NextLink from '@/components/Link';
 import ProTip from '@/components/ProTip';
 import Copyright from '@/components/Copyright';
 
+import SearchHeader from '@/components/SearchHeader';
+
 export default function Home() {
   return (
-    <Container maxWidth="lg">
-      <Box
-        sx={{
-          my: 4,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-        }}
-      >
-        <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Material UI - Next.js example in JavaScript
-        </Typography>
-        <MaterialUILink href="/about" color="secondary" component={NextLink}>
-          Go to the about page
-        </MaterialUILink>
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
+    <>
+    <Box 
+      sx={{ 
+        bgcolor: '#ffffff',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
+      <Container   sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+      <SearchHeader />
+      </Container>
+    </Box>
+    "dfasdfa"
+    </>
   );
 }
+
