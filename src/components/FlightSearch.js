@@ -10,10 +10,6 @@ import {
   FormControl,
   Select,
 } from '@mui/material';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import dayjs from 'dayjs';
 import SearchIcon from '@mui/icons-material/Search';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import FlightLandingIcon from '@mui/icons-material/FlightLand';
@@ -24,16 +20,15 @@ export default function FlightSearch() {
   const [flightType, setFlightType] = useState('');
   const [flightClass, setFlightClass] = useState('');
   const [tripType, setTripType] = useState('');
-  const [departureDate, setDepartureDate] = useState(dayjs());
-  const [returnDate, setReturnDate] = useState(dayjs().add(7, 'day'));
+  const [departureDate, setDepartureDate] = useState('');
+  const [returnDate, setReturnDate] = useState('');
 
   const handleFlightTypeChange = (event) => setFlightType(event.target.value);
   const handleFlightClassChange = (event) => setFlightClass(event.target.value);
   const handleTripTypeChange = (event) => setTripType(event.target.value);
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <Box>
-        {/* Row 1: Dropdowns */}
+    <Box>
+      {/* Row 1: Dropdowns */}
         <Stack direction="row" spacing={1} sx={{ mb: 3 }}>
           <FormControl size="small">
             <Select
@@ -176,36 +171,33 @@ export default function FlightSearch() {
             }}
           />
 
-          <DatePicker
+          <TextField
             label="Departure"
+            type="date"
+            InputLabelProps={{ shrink: true }}
             value={departureDate}
-            onChange={(newValue) => setDepartureDate(newValue)}
+            onChange={(e) => setDepartureDate(e.target.value)}
             sx={{ flex: 1 }}
-            slotProps={{
-              textField: {
-                variant: 'outlined',
-                InputProps: {
-                  sx: { 
-                    '& fieldset': { borderColor: '#A1B0CC' }
-                  }
-                }
+            InputProps={{
+              sx: { 
+                height: '56px',
+                bgcolor: 'white',
+                '& fieldset': { borderColor: '#A1B0CC' }
               }
             }}
           />
-          <DatePicker
+          <TextField
             label="Returning"
+            type="date"
+            InputLabelProps={{ shrink: true }}
             value={returnDate}
-            onChange={(newValue) => setReturnDate(newValue)}
+            onChange={(e) => setReturnDate(e.target.value)}
             sx={{ flex: 1 }}
-            slotProps={{
-              textField: {
-                variant: 'outlined',
-                InputProps: {
-                  sx: { 
-                    bgcolor: 'white',
-                    '& fieldset': { borderColor: '#A1B0CC' }
-                  }
-                }
+            InputProps={{
+              sx: { 
+                height: '56px',
+                bgcolor: 'white',
+                '& fieldset': { borderColor: '#A1B0CC' }
               }
             }}
           />
@@ -242,6 +234,5 @@ export default function FlightSearch() {
           </Button>
         </Stack>
       </Box>
-    </LocalizationProvider>
   );
 }
