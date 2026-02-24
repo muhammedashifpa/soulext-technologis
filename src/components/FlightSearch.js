@@ -1,5 +1,5 @@
 'use client';
-import * as React from 'react';
+import React, { useState } from 'react';
 import { 
   Box, 
   Stack, 
@@ -12,8 +12,7 @@ import {
 } from '@mui/material';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { DateRangePicker } from '@mui/x-date-pickers-pro/DateRangePicker';
-import { SingleInputDateRangeField } from '@mui/x-date-pickers-pro/SingleInputDateRangeField';
+import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import dayjs from 'dayjs';
 import SearchIcon from '@mui/icons-material/Search';
 import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
@@ -22,10 +21,11 @@ import PersonIcon from '@mui/icons-material/Person';
 import SyncAltIcon from '@mui/icons-material/SyncAlt';
 
 export default function FlightSearch() {
-  const [flightType, setFlightType] = React.useState('');
-  const [flightClass, setFlightClass] = React.useState('');
-  const [tripType, setTripType] = React.useState('');
-  const [value, setValue] = React.useState([dayjs(), dayjs().add(7, 'day')]);
+  const [flightType, setFlightType] = useState('');
+  const [flightClass, setFlightClass] = useState('');
+  const [tripType, setTripType] = useState('');
+  const [departureDate, setDepartureDate] = useState(dayjs());
+  const [returnDate, setReturnDate] = useState(dayjs().add(7, 'day'));
 
   const handleFlightTypeChange = (event) => setFlightType(event.target.value);
   const handleFlightClassChange = (event) => setFlightClass(event.target.value);
@@ -176,21 +176,36 @@ export default function FlightSearch() {
             }}
           />
 
-          <DateRangePicker
-            // value={value}
-            onChange={(newValue) => setValue(newValue)}
-            sx={{ flex: 2 }}
-            slots={{ field: SingleInputDateRangeField }}
-            label='Departure - Returning'
-            placeholder="Departure - Returning"
-
+          <DatePicker
+            label="Departure"
+            value={departureDate}
+            onChange={(newValue) => setDepartureDate(newValue)}
+            sx={{ flex: 1 }}
             slotProps={{
               textField: {
                 variant: 'outlined',
-                // label: 'Departure Date',
                 InputProps: {
-                  endAdornment: null
-                },
+                  sx: { 
+                    '& fieldset': { borderColor: '#A1B0CC' }
+                  }
+                }
+              }
+            }}
+          />
+          <DatePicker
+            label="Returning"
+            value={returnDate}
+            onChange={(newValue) => setReturnDate(newValue)}
+            sx={{ flex: 1 }}
+            slotProps={{
+              textField: {
+                variant: 'outlined',
+                InputProps: {
+                  sx: { 
+                    bgcolor: 'white',
+                    '& fieldset': { borderColor: '#A1B0CC' }
+                  }
+                }
               }
             }}
           />

@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   Box, 
   Typography,
@@ -17,7 +17,7 @@ import Boltcon from '@mui/icons-material/Bolt';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 
 const FlightResults = () => {
-  const [tabValue, setTabValue] = React.useState(0);
+  const [tabValue, setTabValue] = useState(0);
 
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);

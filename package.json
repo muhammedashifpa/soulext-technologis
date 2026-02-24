@@ -15,7 +15,6 @@
     "@mui/material": "next",
     "@mui/material-nextjs": "next",
     "@mui/x-date-pickers": "^8.27.2",
-    "@mui/x-date-pickers-pro": "^8.27.2",
     "dayjs": "^1.11.19",
     "eslint": "latest",
     "eslint-config-next": "latest",

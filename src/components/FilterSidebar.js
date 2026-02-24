@@ -8,7 +8,6 @@ import {
   FormGroup,
   Divider,
   Stack,
-  Slider,
   Button
 } from '@mui/material';
 
@@ -72,56 +71,6 @@ const FilterSidebar = () => {
             <FilterRow label="Carry-on bag" price="$129" />
             <FilterRow label="Checked bag" price="$99" />
           </FormGroup>
-        </Box>
-
-        <Divider sx={{ mb: 3, mx: -2 }} />
-
-        <Box sx={{ mb: 3 }}>
-          <Typography variant="subtitle2" sx={{ fontWeight: 600, mb: 2 }}>
-            Departure Time
-          </Typography>
-          <Typography variant="body2" sx={{ mb: 2 }}>
-            Mon 5:00 AM - Tue 12:00 AM
-          </Typography>
-          <Slider
-            defaultValue={[20, 60]}
-            step={5}
-            sx={{
-                  "--Slider-valueLabelArrowSize": "16px",
-                  "--Slider-markSize": "6px",
-                  "--Slider-trackSize": "8px",
-                  "--Slider-thumbSize": "18px",
-                  "--Slider-thumbWidth": "18px"
-                }}
-            marks={[
-              { value: 0 }, { value: 25 }, { value: 50 }, { value: 75 }, { value: 100 }
-            ]}
-          />
-        </Box>
-
-        <Divider sx={{ mb: 3, mx: -2 }} />
-
-        <Box sx={{ mb: 3 }}>
-          <Typography variant="subtitle2" sx={{ fontWeight: 600, mb: 2 }}>
-            Arrival Time
-          </Typography>
-          <Typography variant="body2" sx={{ mb: 2 }}>
-            Mon 5:00 AM - Tue 12:00 AM
-          </Typography>
-          <Slider
-            defaultValue={[25, 60]}
-            step={5}
-            sx={{
-                  "--Slider-valueLabelArrowSize": "16px",
-                  "--Slider-markSize": "6px",
-                  "--Slider-trackSize": "8px",
-                  "--Slider-thumbSize": "18px",
-                  "--Slider-thumbWidth": "18px"
-                }}
-            marks={[
-              { value: 0 }, { value: 25 }, { value: 50 }, { value: 75 }, { value: 100 }
-            ]}
-          />
         </Box>
 
         <Divider sx={{ mb: 3, mx: -2 }} />
