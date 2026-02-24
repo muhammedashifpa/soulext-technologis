@@ -14,8 +14,6 @@
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "@mui/material-nextjs": "latest",
-    "@mui/x-date-pickers": "^8.27.2",
-    "dayjs": "^1.11.19",
     "eslint": "^9.0.0",
     "eslint-config-next": "^16.0.7",
     "next": "^16.0.7",
