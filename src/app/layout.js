@@ -5,7 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "@/theme/theme";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Box } from "@mui/material";
+import Box from "@mui/material/Box";
 
 export default function RootLayout({ children }) {
   return (
@@ -14,13 +14,7 @@ export default function RootLayout({ children }) {
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                minHeight: "100vh",
-              }}
-            >
+            <Box sx={styles.container}>
               <Header />
               {children}
               <Footer />
@@ -31,3 +25,11 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+const styles = {
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    minHeight: "100vh",
+  },
+};

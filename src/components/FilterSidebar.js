@@ -1,33 +1,42 @@
-import React from 'react';
-import { 
-  Paper, 
-  Box, 
-  Typography, 
-  FormControlLabel, 
-  Checkbox, 
-  FormGroup,
-  Divider,
-  Stack,
-  Button
-} from '@mui/material';
+import React from "react";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Paper from "@mui/material/Paper";
+import Checkbox from "@mui/material/Checkbox";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Slider from "@mui/material/Slider";
+import Divider from "@mui/material/Divider";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
 const FilterRow = ({ label, price, defaultChecked = false }) => (
-  <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ width: '100%' }}>
-    <FormControlLabel 
-      control={<Checkbox size="small" defaultChecked={defaultChecked} />} 
-      label={<Typography variant="body2">{label}</Typography>} 
-      sx={{ m: 0 }}
+  <Stack
+    direction="row"
+    justifyContent="space-between"
+    alignItems="center"
+    sx={styles.filterRowContainer}
+  >
+    <FormControlLabel
+      control={<Checkbox size="small" defaultChecked={defaultChecked} />}
+      label={<Typography variant="body2">{label}</Typography>}
+      sx={styles.filterRowLabel}
     />
     <Typography variant="body2">{price}</Typography>
   </Stack>
 );
 
 const FilterSectionHeader = ({ title }) => (
-  <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{ mb: 1 }}>
-    <Typography variant="subtitle2" sx={{ fontWeight: 600 }}>
+  <Stack
+    direction="row"
+    justifyContent="space-between"
+    alignItems="center"
+    sx={styles.sectionHeaderContainer}
+  >
+    <Typography variant="subtitle2" sx={styles.sectionHeaderTitle}>
       {title}
     </Typography>
-    <Typography variant="subtitle2" sx={{ fontWeight: 600 }}>
+    <Typography variant="subtitle2" sx={styles.sectionHeaderTitle}>
       From
     </Typography>
   </Stack>
@@ -35,26 +44,26 @@ const FilterSectionHeader = ({ title }) => (
 
 const FilterSidebar = () => {
   return (
-    <Paper elevation={0} sx={{ border: '1px solid #eee', borderRadius: 2, overflow: 'hidden' }}>
-      <Box sx={{ p: 2 }}>
-        <Typography variant="h6" sx={{ fontWeight: 600, mb: 2 }}>
+    <Paper variant="outlined" sx={styles.sidebarPaper}>
+      <Box sx={styles.sidebarContent}>
+        <Typography variant="h6" sx={styles.filterByTitle}>
           Filter By
         </Typography>
-        
-        <Box sx={{ mb: 3 }}>
+
+        <Box sx={styles.sectionContainer}>
           <FilterSectionHeader title="Stop" />
-          <FormGroup sx={{ gap: 1 }}>
+          <FormGroup sx={styles.formGroup}>
             <FilterRow label="Nonstop(23)" price="$110" />
             <FilterRow label="1 Stop (4)" price="$324" />
             <FilterRow label="2+ Stops (2)" price="$349" />
           </FormGroup>
         </Box>
 
-        <Divider sx={{ mb: 3, mx: -2 }} />
+        <Divider sx={styles.divider} />
 
-        <Box sx={{ mb: 3 }}>
+        <Box sx={styles.sectionContainer}>
           <FilterSectionHeader title="Airlines" />
-          <FormGroup sx={{ gap: 1 }}>
+          <FormGroup sx={styles.formGroup}>
             <FilterRow label="ABC Air Technologies" price="$203" />
             <FilterRow label="ABC Airlines" price="$160" />
             <FilterRow label="XYZ Airways" price="$212" />
@@ -63,38 +72,27 @@ const FilterSidebar = () => {
           </FormGroup>
         </Box>
 
-        <Divider sx={{ mb: 3, mx: -2 }} />
+        <Divider sx={styles.divider} />
 
-        <Box sx={{ mb: 3 }}>
+        <Box sx={styles.sectionContainer}>
           <FilterSectionHeader title="Travel and Baggage" />
-          <FormGroup sx={{ gap: 1 }}>
+          <FormGroup sx={styles.formGroup}>
             <FilterRow label="Carry-on bag" price="$129" />
             <FilterRow label="Checked bag" price="$99" />
           </FormGroup>
         </Box>
 
-        <Divider sx={{ mb: 3, mx: -2 }} />
+        <Divider sx={styles.divider} />
 
-        <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
-          <Button 
-            variant="text" 
-            fullWidth 
-            sx={{ 
-              flex: 0.7,
-            }}
-          >
+        <Box sx={styles.buttonContainer}>
+          <Button variant="text" fullWidth sx={styles.resetButton}>
             Reset
           </Button>
-          <Button 
-            variant="contained" 
-            fullWidth 
+          <Button
+            variant="contained"
+            fullWidth
             disableElevation
-            sx={{ 
-              textTransform: 'none', 
-              flex: 1,
-              fontWeight: 600,
-              borderRadius: 1.5
-            }}
+            sx={styles.applyButton}
           >
             Apply Filters
           </Button>
@@ -105,3 +103,21 @@ const FilterSidebar = () => {
 };
 
 export default FilterSidebar;
+
+const styles = {
+  filterRowContainer: { width: "100%" },
+  filterRowLabel: { m: 0 },
+  sectionHeaderTitle: { fontWeight: 600 },
+  sectionHeaderContainer: { mb: 1 },
+  sidebarPaper: {
+    overflow: "hidden",
+  },
+  sidebarContent: { p: 2 },
+  filterByTitle: { fontWeight: 600, mb: 2 },
+  sectionContainer: { mb: 3 },
+  formGroup: { gap: 1 },
+  divider: { mb: 3, mx: -2 },
+  buttonContainer: { display: "flex", gap: 2, alignItems: "center" },
+  resetButton: { flex: 0.7 },
+  applyButton: { flex: 1 },
+};

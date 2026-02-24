@@ -78,6 +78,9 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           padding: "8px 20px",
+          borderRadius: 4,
+          textTransform: "none",
+          fontWeight: 600,
         },
         containedPrimary: {
           backgroundColor: palette.primary.main,
@@ -85,15 +88,32 @@ const theme = createTheme({
             backgroundColor: "#4a2b8c",
           },
         },
+        outlinedPrimary: {
+          borderColor: palette.primary.main,
+          "&:hover": {
+            borderColor: "#4a2b8c",
+            backgroundColor: "rgba(93, 54, 175, 0.04)",
+          },
+        },
       },
     },
     MuiCard: {
       defaultProps: {
-        elevation: 2,
+        elevation: 0,
+        variant: "outlined",
       },
       styleOverrides: {
         root: {
-          boxShadow: "0 4px 4px rgba(141,141,141,.25)",
+          borderColor: "#eee",
+          borderRadius: 8,
+        },
+      },
+    },
+    MuiPaper: {
+      styleOverrides: {
+        outlined: {
+          borderColor: "#eee",
+          borderRadius: 8,
         },
       },
     },
@@ -101,6 +121,26 @@ const theme = createTheme({
       defaultProps: {
         variant: "outlined",
         size: "small",
+      },
+      styleOverrides: {
+        root: {
+          "& .MuiOutlinedInput-root": {
+            backgroundColor: "#ffffff",
+            "& fieldset": {
+              borderColor: "#A1B0CC",
+            },
+            "&:hover fieldset": {
+              borderColor: palette.primary.main,
+            },
+          },
+        },
+      },
+    },
+    MuiSelect: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#ffffff",
+        },
       },
     },
     MuiCheckbox: {
@@ -132,7 +172,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           textTransform: "none",
-          fontWeight: 700,
+          fontWeight: 600,
           "&.Mui-selected": {
             color: palette.primary.main,
           },
