@@ -7,7 +7,6 @@ import {
   TRAVEL_CLASS,
 } from "@/constants/flightConstants";
 
-// build displayed flights for different sorting options
 function sortFlights(flights, sortBy) {
   const copy = [...flights];
   if (sortBy === SORT_BY.CHEAPEST)
@@ -18,7 +17,7 @@ function sortFlights(flights, sortBy) {
     (a, b) => a.price + a.durationMins - (b.price + b.durationMins),
   );
 }
-// Flight object creation for different sorting options
+
 function buildDisplayedFlights(flights) {
   return {
     [SORT_BY.RECOMMENDED]: sortFlights(flights, SORT_BY.RECOMMENDED),
@@ -27,12 +26,11 @@ function buildDisplayedFlights(flights) {
   };
 }
 
-// apply filters to flights eg: stops, airlines, baggage
 function applyFilters(flights, filters) {
   return flights.filter((flight) => {
     if (filters.stops.length > 0) {
-      const matches = filters.stops.some((s) => STOPS_PREDICATE[s]?.(flight));
-      if (!matches) return false;
+      if (!filters.stops.some((s) => STOPS_PREDICATE[s]?.(flight)))
+        return false;
     }
     if (
       filters.airlines.length > 0 &&
@@ -41,30 +39,67 @@ function applyFilters(flights, filters) {
       return false;
     }
     if (filters.baggage.length > 0) {
-      const hasAll = filters.baggage.every((b) => flight.baggage.includes(b));
-      if (!hasAll) return false;
+      if (!filters.baggage.every((b) => flight.baggage.includes(b)))
+        return false;
     }
     return true;
   });
 }
 
+function buildFilterMeta(flights) {
+  const stopBuckets = { Nonstop: [], "1 Stop": [], "2+ Stops": [] };
+  const airlineMap = {};
+  const baggageMap = {};
+
+  for (const f of flights) {
+    const bucket =
+      f.stops === 0 ? "Nonstop" : f.stops === 1 ? "1 Stop" : "2+ Stops";
+    stopBuckets[bucket].push(f.price);
+
+    airlineMap[f.airlineName] ??= [];
+    airlineMap[f.airlineName].push(f.price);
+
+    for (const b of f.baggage) {
+      baggageMap[b] ??= [];
+      baggageMap[b].push(f.price);
+    }
+  }
+
+  const minPrice = (arr) =>
+    arr.length ? `$${Math.min(...arr).toLocaleString()}` : null;
+  const toOption = (value, label, prices, extra = {}) => ({
+    value,
+    label,
+    minPrice: minPrice(prices),
+    ...extra,
+  });
+
+  return {
+    stops: Object.entries(stopBuckets).map(([label, prices]) =>
+      toOption(label, label, prices, { count: prices.length }),
+    ),
+    airlines: Object.entries(airlineMap).map(([name, prices]) =>
+      toOption(name, name, prices),
+    ),
+    baggage: Object.entries(baggageMap).map(([name, prices]) =>
+      toOption(name, name, prices),
+    ),
+  };
+}
+
+const defaultFilters = { stops: [], airlines: [], baggage: [] };
 const initialDisplayedFlights = buildDisplayedFlights(mockFlights);
+const initialFilterMeta = buildFilterMeta(mockFlights);
 
 export const useFlightStore = create((set, get) => ({
   allFlights: mockFlights,
-
-  // All three sorted views live here — read directly by the UI
   displayedFlights: initialDisplayedFlights,
+  filterMeta: initialFilterMeta,
 
   tripType: TRIP_TYPE.ROUND_TRIP,
   travelClass: TRAVEL_CLASS.ECONOMY,
   sortBy: SORT_BY.RECOMMENDED,
-
-  filters: {
-    stops: [],
-    airlines: [],
-    baggage: [],
-  },
+  filters: { ...defaultFilters },
 
   setTripType: (tripType) => set({ tripType }),
   setTravelClass: (travelClass) => set({ travelClass }),
@@ -84,21 +119,16 @@ export const useFlightStore = create((set, get) => ({
   applyFiltersAndSort: () => {
     const { allFlights, filters } = get();
     const hasFilters = Object.values(filters).some((f) => f.length > 0);
-
-    if (!hasFilters) {
-      set({ displayedFlights: initialDisplayedFlights });
-      return;
-    }
-
-    const filtered = applyFilters(allFlights, filters);
-    set({ displayedFlights: buildDisplayedFlights(filtered) });
+    const source = hasFilters ? applyFilters(allFlights, filters) : allFlights;
+    set({ displayedFlights: buildDisplayedFlights(source) });
   },
 
   resetFilters: () => {
     set({
-      filters: { stops: [], airlines: [], baggage: [] },
+      filters: { ...defaultFilters },
       sortBy: SORT_BY.RECOMMENDED,
       displayedFlights: initialDisplayedFlights,
+      filterMeta: initialFilterMeta,
     });
   },
 }));

@@ -58,7 +58,7 @@ export const TRIP_TYPE_OPTIONS = [
   { value: TRIP_TYPE.MULTI_CITY, label: "Multi-City" },
 ];
 
-// Airlines list — keep this in sync with generateFlights.mjs
+// Airlines list
 export const AIRLINES = [
   "ABC Air Technologies",
   "ABC Airlines",
@@ -85,7 +85,7 @@ export const REFUNDABLE_STATUS = {
   FULLY: "Fully Refundable",
 };
 
-// Airports — each has IATA code, full name, city, and country
+// Airports
 export const AIRPORTS = [
   {
     code: "MBA",

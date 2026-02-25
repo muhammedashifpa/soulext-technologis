@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -5,12 +6,13 @@ import Paper from "@mui/material/Paper";
 import Checkbox from "@mui/material/Checkbox";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Slider from "@mui/material/Slider";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 
-const FilterRow = ({ label, price, defaultChecked = false }) => (
+import { useFlightStore } from "@/store/useFlightStore";
+
+const FilterRow = ({ label, price, checked, onChange }) => (
   <Stack
     direction="row"
     justifyContent="space-between"
@@ -18,7 +20,7 @@ const FilterRow = ({ label, price, defaultChecked = false }) => (
     sx={styles.filterRowContainer}
   >
     <FormControlLabel
-      control={<Checkbox size="small" defaultChecked={defaultChecked} />}
+      control={<Checkbox size="small" checked={checked} onChange={onChange} />}
       label={<Typography variant="body2">{label}</Typography>}
       sx={styles.filterRowLabel}
     />
@@ -42,7 +44,28 @@ const FilterSectionHeader = ({ title }) => (
   </Stack>
 );
 
+const FilterSection = ({ title, items, activeValues, onToggle, category }) => (
+  <Box sx={styles.sectionContainer}>
+    <FilterSectionHeader title={title} />
+    <FormGroup sx={styles.formGroup}>
+      {items.map((item) => (
+        <FilterRow
+          key={item.value}
+          label={
+            item.count != null ? `${item.label} (${item.count})` : item.label
+          }
+          price={item.minPrice}
+          checked={activeValues.includes(item.value)}
+          onChange={() => onToggle(category, item.value)}
+        />
+      ))}
+    </FormGroup>
+  </Box>
+);
+
 const FilterSidebar = () => {
+  const { filterMeta, filters, toggleFilter, resetFilters } = useFlightStore();
+
   return (
     <Paper variant="outlined" sx={styles.sidebarPaper}>
       <Box sx={styles.sidebarContent}>
@@ -50,42 +73,38 @@ const FilterSidebar = () => {
           Filter By
         </Typography>
 
-        <Box sx={styles.sectionContainer}>
-          <FilterSectionHeader title="Stop" />
-          <FormGroup sx={styles.formGroup}>
-            <FilterRow label="Nonstop(23)" price="$110" />
-            <FilterRow label="1 Stop (4)" price="$324" />
-            <FilterRow label="2+ Stops (2)" price="$349" />
-          </FormGroup>
-        </Box>
-
+        <FilterSection
+          title="Stop"
+          items={filterMeta.stops}
+          activeValues={filters.stops}
+          onToggle={toggleFilter}
+          category="stops"
+        />
         <Divider sx={styles.divider} />
-
-        <Box sx={styles.sectionContainer}>
-          <FilterSectionHeader title="Airlines" />
-          <FormGroup sx={styles.formGroup}>
-            <FilterRow label="ABC Air Technologies" price="$203" />
-            <FilterRow label="ABC Airlines" price="$160" />
-            <FilterRow label="XYZ Airways" price="$212" />
-            <FilterRow label="BOP Links" price="$129" />
-            <FilterRow label="EDF Express" price="$190" />
-          </FormGroup>
-        </Box>
-
+        <FilterSection
+          title="Airlines"
+          items={filterMeta.airlines}
+          activeValues={filters.airlines}
+          onToggle={toggleFilter}
+          category="airlines"
+        />
         <Divider sx={styles.divider} />
-
-        <Box sx={styles.sectionContainer}>
-          <FilterSectionHeader title="Travel and Baggage" />
-          <FormGroup sx={styles.formGroup}>
-            <FilterRow label="Carry-on bag" price="$129" />
-            <FilterRow label="Checked bag" price="$99" />
-          </FormGroup>
-        </Box>
-
+        <FilterSection
+          title="Travel and Baggage"
+          items={filterMeta.baggage}
+          activeValues={filters.baggage}
+          onToggle={toggleFilter}
+          category="baggage"
+        />
         <Divider sx={styles.divider} />
 
         <Box sx={styles.buttonContainer}>
-          <Button variant="text" fullWidth sx={styles.resetButton}>
+          <Button
+            variant="text"
+            fullWidth
+            sx={styles.resetButton}
+            onClick={resetFilters}
+          >
             Reset
           </Button>
           <Button
@@ -109,9 +128,7 @@ const styles = {
   filterRowLabel: { m: 0 },
   sectionHeaderTitle: { fontWeight: 600 },
   sectionHeaderContainer: { mb: 1 },
-  sidebarPaper: {
-    overflow: "hidden",
-  },
+  sidebarPaper: { overflow: "hidden" },
   sidebarContent: { p: 2 },
   filterByTitle: { fontWeight: 600, mb: 2 },
   sectionContainer: { mb: 3 },
