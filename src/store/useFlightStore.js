@@ -33,17 +33,17 @@ function buildFilterMeta(flights) {
   const airlineMap = {};
   const baggageMap = {};
 
-  for (const f of flights) {
+  flights.forEach((f) => {
     const bucket =
       f.stops === 0 ? "Nonstop" : f.stops === 1 ? "1 Stop" : "2+ Stops";
     stopBuckets[bucket].push(f.price);
     airlineMap[f.airlineName] ??= [];
     airlineMap[f.airlineName].push(f.price);
-    for (const b of f.baggage) {
+    f.baggage.forEach((b) => {
       baggageMap[b] ??= [];
       baggageMap[b].push(f.price);
-    }
-  }
+    });
+  });
 
   const minPrice = (arr) =>
     arr.length ? `$${Math.min(...arr).toLocaleString()}` : null;
