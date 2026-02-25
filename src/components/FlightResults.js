@@ -14,7 +14,14 @@ import BoltIcon from "@mui/icons-material/Bolt";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 
 import { useFlightStore } from "@/store/useFlightStore";
-import { SORT_BY } from "@/constants/flightConstants";
+import { SORT_BY, REFUNDABLE_STATUS } from "@/constants/flightConstants";
+
+const refundableColor = (status) => {
+  if (status === REFUNDABLE_STATUS.FULLY) return "#198754";
+  if (status === REFUNDABLE_STATUS.NON) return "#EB5757";
+  if (status === REFUNDABLE_STATUS.PARTIALLY) return "#FD7E14";
+  return "#000000";
+};
 
 const FlightResults = () => {
   const [tabValue, setTabValue] = useState(0);
@@ -214,7 +221,13 @@ const FlightResults = () => {
             <Typography variant="caption" color="text.secondary">
               {flight.seatsRemaining} seats remaining
             </Typography>
-            <Typography variant="caption" sx={styles.partiallyRefundable}>
+            <Typography
+              variant="caption"
+              sx={{
+                ...styles.refundableText,
+                color: refundableColor(flight.refundableStatus),
+              }}
+            >
               {flight.refundableStatus}
             </Typography>
             <Button
@@ -312,6 +325,6 @@ const styles = {
   },
   bookButton: { width: "100%", py: 1 },
   footerContainer: { mt: 2 },
-  partiallyRefundable: { color: "orange", fontWeight: 600 },
+  refundableText: { fontWeight: 600 },
   viewDetailsBtn: { fontWeight: 600 },
 };
