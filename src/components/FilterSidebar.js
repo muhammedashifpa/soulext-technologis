@@ -64,7 +64,13 @@ const FilterSection = ({ title, items, activeValues, onToggle, category }) => (
 );
 
 const FilterSidebar = () => {
-  const { filterMeta, filters, toggleFilter, resetFilters } = useFlightStore();
+  const {
+    filterMeta,
+    pendingFilters,
+    toggleFilter,
+    applyFiltersAndSort,
+    resetFilters,
+  } = useFlightStore();
 
   return (
     <Paper variant="outlined" sx={styles.sidebarPaper}>
@@ -76,7 +82,7 @@ const FilterSidebar = () => {
         <FilterSection
           title="Stop"
           items={filterMeta.stops}
-          activeValues={filters.stops}
+          activeValues={pendingFilters.stops}
           onToggle={toggleFilter}
           category="stops"
         />
@@ -84,7 +90,7 @@ const FilterSidebar = () => {
         <FilterSection
           title="Airlines"
           items={filterMeta.airlines}
-          activeValues={filters.airlines}
+          activeValues={pendingFilters.airlines}
           onToggle={toggleFilter}
           category="airlines"
         />
@@ -92,7 +98,7 @@ const FilterSidebar = () => {
         <FilterSection
           title="Travel and Baggage"
           items={filterMeta.baggage}
-          activeValues={filters.baggage}
+          activeValues={pendingFilters.baggage}
           onToggle={toggleFilter}
           category="baggage"
         />
@@ -112,6 +118,7 @@ const FilterSidebar = () => {
             fullWidth
             disableElevation
             sx={styles.applyButton}
+            onClick={applyFiltersAndSort}
           >
             Apply Filters
           </Button>
