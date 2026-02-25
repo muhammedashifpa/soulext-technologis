@@ -1,0 +1,4572 @@
+[
+  {
+    "id": "flight-1",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "20:28",
+    "departure": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "arrivalTime": "08:53",
+    "arrival": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "durationText": "12hr 25min",
+    "durationMins": 745,
+    "price": 446,
+    "formattedPrice": "$446",
+    "seatsRemaining": 50,
+    "refundableStatus": "Fully Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-2",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "20:03",
+    "departure": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "arrivalTime": "05:54",
+    "arrival": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "durationText": "9hr 51min",
+    "durationMins": 591,
+    "price": 203,
+    "formattedPrice": "$203",
+    "seatsRemaining": 119,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-3",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "11:48",
+    "departure": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "arrivalTime": "03:51",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "16hr 3min",
+    "durationMins": 963,
+    "price": 405,
+    "formattedPrice": "$405",
+    "seatsRemaining": 64,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-4",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "17:51",
+    "departure": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "arrivalTime": "00:54",
+    "arrival": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "durationText": "7hr 3min",
+    "durationMins": 423,
+    "price": 438,
+    "formattedPrice": "$438",
+    "seatsRemaining": 102,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-5",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "10:56",
+    "departure": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "arrivalTime": "04:40",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "17hr 44min",
+    "durationMins": 1064,
+    "price": 279,
+    "formattedPrice": "$279",
+    "seatsRemaining": 28,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-6",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "06:42",
+    "departure": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "arrivalTime": "00:17",
+    "arrival": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "durationText": "17hr 35min",
+    "durationMins": 1055,
+    "price": 848,
+    "formattedPrice": "$848",
+    "seatsRemaining": 36,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-7",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "14:19",
+    "departure": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "arrivalTime": "21:56",
+    "arrival": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "durationText": "7hr 37min",
+    "durationMins": 457,
+    "price": 771,
+    "formattedPrice": "$771",
+    "seatsRemaining": 146,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-8",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "02:41",
+    "departure": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "arrivalTime": "09:37",
+    "arrival": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "durationText": "6hr 56min",
+    "durationMins": 416,
+    "price": 591,
+    "formattedPrice": "$591",
+    "seatsRemaining": 63,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-9",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "16:13",
+    "departure": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "arrivalTime": "06:03",
+    "arrival": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "durationText": "13hr 50min",
+    "durationMins": 830,
+    "price": 410,
+    "formattedPrice": "$410",
+    "seatsRemaining": 83,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-10",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "03:51",
+    "departure": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "arrivalTime": "12:24",
+    "arrival": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "durationText": "8hr 33min",
+    "durationMins": 513,
+    "price": 913,
+    "formattedPrice": "$913",
+    "seatsRemaining": 74,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-11",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "01:42",
+    "departure": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "arrivalTime": "06:46",
+    "arrival": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "durationText": "5hr 4min",
+    "durationMins": 304,
+    "price": 590,
+    "formattedPrice": "$590",
+    "seatsRemaining": 142,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-12",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "04:33",
+    "departure": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "arrivalTime": "09:17",
+    "arrival": {
+      "code": "PEK",
+      "name": "Beijing Capital International",
+      "city": "Beijing",
+      "country": "China"
+    },
+    "durationText": "4hr 44min",
+    "durationMins": 284,
+    "price": 1090,
+    "formattedPrice": "$1,090",
+    "seatsRemaining": 59,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-13",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "14:32",
+    "departure": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "arrivalTime": "00:47",
+    "arrival": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "durationText": "10hr 15min",
+    "durationMins": 615,
+    "price": 494,
+    "formattedPrice": "$494",
+    "seatsRemaining": 118,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-14",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "02:18",
+    "departure": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "arrivalTime": "09:32",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "7hr 14min",
+    "durationMins": 434,
+    "price": 826,
+    "formattedPrice": "$826",
+    "seatsRemaining": 9,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-15",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "20:31",
+    "departure": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "arrivalTime": "01:05",
+    "arrival": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "durationText": "4hr 34min",
+    "durationMins": 274,
+    "price": 595,
+    "formattedPrice": "$595",
+    "seatsRemaining": 169,
+    "refundableStatus": "Fully Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-16",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "11:51",
+    "departure": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "arrivalTime": "06:16",
+    "arrival": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "USA"
+    },
+    "durationText": "18hr 25min",
+    "durationMins": 1105,
+    "price": 741,
+    "formattedPrice": "$741",
+    "seatsRemaining": 169,
+    "refundableStatus": "Fully Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-17",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "15:50",
+    "departure": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "arrivalTime": "07:26",
+    "arrival": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "durationText": "15hr 36min",
+    "durationMins": 936,
+    "price": 1143,
+    "formattedPrice": "$1,143",
+    "seatsRemaining": 171,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-18",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "20:09",
+    "departure": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "arrivalTime": "03:38",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "7hr 29min",
+    "durationMins": 449,
+    "price": 763,
+    "formattedPrice": "$763",
+    "seatsRemaining": 74,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-19",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "06:08",
+    "departure": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "arrivalTime": "10:33",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "4hr 25min",
+    "durationMins": 265,
+    "price": 787,
+    "formattedPrice": "$787",
+    "seatsRemaining": 10,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-20",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "10:28",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "21:06",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "10hr 38min",
+    "durationMins": 638,
+    "price": 750,
+    "formattedPrice": "$750",
+    "seatsRemaining": 92,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-21",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "10:08",
+    "departure": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "arrivalTime": "22:56",
+    "arrival": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "durationText": "12hr 48min",
+    "durationMins": 768,
+    "price": 693,
+    "formattedPrice": "$693",
+    "seatsRemaining": 1,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-22",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "08:13",
+    "departure": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "arrivalTime": "11:09",
+    "arrival": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "durationText": "2hr 56min",
+    "durationMins": 176,
+    "price": 990,
+    "formattedPrice": "$990",
+    "seatsRemaining": 141,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-23",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "04:04",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "14:51",
+    "arrival": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "durationText": "10hr 47min",
+    "durationMins": 647,
+    "price": 825,
+    "formattedPrice": "$825",
+    "seatsRemaining": 20,
+    "refundableStatus": "Partially Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-24",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "06:49",
+    "departure": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "arrivalTime": "14:27",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "7hr 38min",
+    "durationMins": 458,
+    "price": 507,
+    "formattedPrice": "$507",
+    "seatsRemaining": 108,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-25",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "19:18",
+    "departure": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "arrivalTime": "06:47",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "11hr 29min",
+    "durationMins": 689,
+    "price": 717,
+    "formattedPrice": "$717",
+    "seatsRemaining": 99,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-26",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "16:51",
+    "departure": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "arrivalTime": "05:23",
+    "arrival": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "durationText": "12hr 32min",
+    "durationMins": 752,
+    "price": 428,
+    "formattedPrice": "$428",
+    "seatsRemaining": 78,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-27",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "16:09",
+    "departure": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "arrivalTime": "08:37",
+    "arrival": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "durationText": "16hr 28min",
+    "durationMins": 988,
+    "price": 656,
+    "formattedPrice": "$656",
+    "seatsRemaining": 58,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-28",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "13:28",
+    "departure": {
+      "code": "CPT",
+      "name": "Cape Town International",
+      "city": "Cape Town",
+      "country": "South Africa"
+    },
+    "arrivalTime": "06:31",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "17hr 3min",
+    "durationMins": 1023,
+    "price": 962,
+    "formattedPrice": "$962",
+    "seatsRemaining": 15,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-29",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "04:05",
+    "departure": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "arrivalTime": "06:48",
+    "arrival": {
+      "code": "CPT",
+      "name": "Cape Town International",
+      "city": "Cape Town",
+      "country": "South Africa"
+    },
+    "durationText": "2hr 43min",
+    "durationMins": 163,
+    "price": 616,
+    "formattedPrice": "$616",
+    "seatsRemaining": 25,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-30",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "20:37",
+    "departure": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "arrivalTime": "03:06",
+    "arrival": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "durationText": "6hr 29min",
+    "durationMins": 389,
+    "price": 730,
+    "formattedPrice": "$730",
+    "seatsRemaining": 182,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-31",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "12:29",
+    "departure": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "arrivalTime": "02:30",
+    "arrival": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "durationText": "14hr 1min",
+    "durationMins": 841,
+    "price": 484,
+    "formattedPrice": "$484",
+    "seatsRemaining": 119,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-32",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "05:59",
+    "departure": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "arrivalTime": "11:59",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "6hr 0min",
+    "durationMins": 360,
+    "price": 456,
+    "formattedPrice": "$456",
+    "seatsRemaining": 117,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-33",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "12:08",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "03:14",
+    "arrival": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "USA"
+    },
+    "durationText": "15hr 6min",
+    "durationMins": 906,
+    "price": 334,
+    "formattedPrice": "$334",
+    "seatsRemaining": 17,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-34",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "16:12",
+    "departure": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "arrivalTime": "03:24",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "11hr 12min",
+    "durationMins": 672,
+    "price": 231,
+    "formattedPrice": "$231",
+    "seatsRemaining": 155,
+    "refundableStatus": "Partially Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-35",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "01:57",
+    "departure": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "arrivalTime": "16:22",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "14hr 25min",
+    "durationMins": 865,
+    "price": 620,
+    "formattedPrice": "$620",
+    "seatsRemaining": 117,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-36",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "15:30",
+    "departure": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "arrivalTime": "20:32",
+    "arrival": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "durationText": "5hr 2min",
+    "durationMins": 302,
+    "price": 610,
+    "formattedPrice": "$610",
+    "seatsRemaining": 38,
+    "refundableStatus": "Fully Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-37",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "16:09",
+    "departure": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "arrivalTime": "02:14",
+    "arrival": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "durationText": "10hr 5min",
+    "durationMins": 605,
+    "price": 808,
+    "formattedPrice": "$808",
+    "seatsRemaining": 196,
+    "refundableStatus": "Fully Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-38",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "00:51",
+    "departure": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "arrivalTime": "11:10",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "10hr 19min",
+    "durationMins": 619,
+    "price": 477,
+    "formattedPrice": "$477",
+    "seatsRemaining": 73,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-39",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "19:03",
+    "departure": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "arrivalTime": "08:01",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "12hr 58min",
+    "durationMins": 778,
+    "price": 837,
+    "formattedPrice": "$837",
+    "seatsRemaining": 118,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-40",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "16:10",
+    "departure": {
+      "code": "PEK",
+      "name": "Beijing Capital International",
+      "city": "Beijing",
+      "country": "China"
+    },
+    "arrivalTime": "18:13",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "2hr 3min",
+    "durationMins": 123,
+    "price": 788,
+    "formattedPrice": "$788",
+    "seatsRemaining": 74,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-41",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "10:28",
+    "departure": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "arrivalTime": "20:43",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "10hr 15min",
+    "durationMins": 615,
+    "price": 711,
+    "formattedPrice": "$711",
+    "seatsRemaining": 151,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-42",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "12:29",
+    "departure": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "arrivalTime": "15:31",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "3hr 2min",
+    "durationMins": 182,
+    "price": 970,
+    "formattedPrice": "$970",
+    "seatsRemaining": 137,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-43",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "03:05",
+    "departure": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "arrivalTime": "18:37",
+    "arrival": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "durationText": "15hr 32min",
+    "durationMins": 932,
+    "price": 962,
+    "formattedPrice": "$962",
+    "seatsRemaining": 199,
+    "refundableStatus": "Partially Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-44",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "15:15",
+    "departure": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "arrivalTime": "08:39",
+    "arrival": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "durationText": "17hr 24min",
+    "durationMins": 1044,
+    "price": 508,
+    "formattedPrice": "$508",
+    "seatsRemaining": 32,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-45",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "09:47",
+    "departure": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "arrivalTime": "04:02",
+    "arrival": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "USA"
+    },
+    "durationText": "18hr 15min",
+    "durationMins": 1095,
+    "price": 822,
+    "formattedPrice": "$822",
+    "seatsRemaining": 148,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-46",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "15:18",
+    "departure": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "arrivalTime": "07:20",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "16hr 2min",
+    "durationMins": 962,
+    "price": 443,
+    "formattedPrice": "$443",
+    "seatsRemaining": 93,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-47",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "20:23",
+    "departure": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "arrivalTime": "08:19",
+    "arrival": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "durationText": "11hr 56min",
+    "durationMins": 716,
+    "price": 640,
+    "formattedPrice": "$640",
+    "seatsRemaining": 118,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-48",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "18:00",
+    "departure": {
+      "code": "PEK",
+      "name": "Beijing Capital International",
+      "city": "Beijing",
+      "country": "China"
+    },
+    "arrivalTime": "10:56",
+    "arrival": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "durationText": "16hr 56min",
+    "durationMins": 1016,
+    "price": 817,
+    "formattedPrice": "$817",
+    "seatsRemaining": 13,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-49",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "09:49",
+    "departure": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "arrivalTime": "11:50",
+    "arrival": {
+      "code": "CPT",
+      "name": "Cape Town International",
+      "city": "Cape Town",
+      "country": "South Africa"
+    },
+    "durationText": "2hr 1min",
+    "durationMins": 121,
+    "price": 821,
+    "formattedPrice": "$821",
+    "seatsRemaining": 70,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-50",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "14:24",
+    "departure": {
+      "code": "PEK",
+      "name": "Beijing Capital International",
+      "city": "Beijing",
+      "country": "China"
+    },
+    "arrivalTime": "23:19",
+    "arrival": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "durationText": "8hr 55min",
+    "durationMins": 535,
+    "price": 672,
+    "formattedPrice": "$672",
+    "seatsRemaining": 119,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-51",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "15:58",
+    "departure": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "arrivalTime": "23:36",
+    "arrival": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "durationText": "7hr 38min",
+    "durationMins": 458,
+    "price": 687,
+    "formattedPrice": "$687",
+    "seatsRemaining": 179,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-52",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "12:58",
+    "departure": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "arrivalTime": "07:21",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "18hr 23min",
+    "durationMins": 1103,
+    "price": 388,
+    "formattedPrice": "$388",
+    "seatsRemaining": 5,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-53",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "09:13",
+    "departure": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "arrivalTime": "19:45",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "10hr 32min",
+    "durationMins": 632,
+    "price": 375,
+    "formattedPrice": "$375",
+    "seatsRemaining": 58,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-54",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "15:32",
+    "departure": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "arrivalTime": "08:32",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "17hr 0min",
+    "durationMins": 1020,
+    "price": 713,
+    "formattedPrice": "$713",
+    "seatsRemaining": 178,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-55",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "04:00",
+    "departure": {
+      "code": "PEK",
+      "name": "Beijing Capital International",
+      "city": "Beijing",
+      "country": "China"
+    },
+    "arrivalTime": "12:49",
+    "arrival": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "durationText": "8hr 49min",
+    "durationMins": 529,
+    "price": 763,
+    "formattedPrice": "$763",
+    "seatsRemaining": 143,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-56",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "03:42",
+    "departure": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "arrivalTime": "17:22",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "13hr 40min",
+    "durationMins": 820,
+    "price": 664,
+    "formattedPrice": "$664",
+    "seatsRemaining": 44,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-57",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "08:53",
+    "departure": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "arrivalTime": "14:12",
+    "arrival": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "durationText": "5hr 19min",
+    "durationMins": 319,
+    "price": 275,
+    "formattedPrice": "$275",
+    "seatsRemaining": 172,
+    "refundableStatus": "Fully Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-58",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "03:54",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "12:10",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "8hr 16min",
+    "durationMins": 496,
+    "price": 615,
+    "formattedPrice": "$615",
+    "seatsRemaining": 115,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-59",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "16:31",
+    "departure": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "arrivalTime": "03:17",
+    "arrival": {
+      "code": "PEK",
+      "name": "Beijing Capital International",
+      "city": "Beijing",
+      "country": "China"
+    },
+    "durationText": "10hr 46min",
+    "durationMins": 646,
+    "price": 979,
+    "formattedPrice": "$979",
+    "seatsRemaining": 181,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-60",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "08:20",
+    "departure": {
+      "code": "CPT",
+      "name": "Cape Town International",
+      "city": "Cape Town",
+      "country": "South Africa"
+    },
+    "arrivalTime": "15:44",
+    "arrival": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "durationText": "7hr 24min",
+    "durationMins": 444,
+    "price": 647,
+    "formattedPrice": "$647",
+    "seatsRemaining": 129,
+    "refundableStatus": "Fully Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-61",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "23:13",
+    "departure": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "arrivalTime": "08:02",
+    "arrival": {
+      "code": "CPT",
+      "name": "Cape Town International",
+      "city": "Cape Town",
+      "country": "South Africa"
+    },
+    "durationText": "8hr 49min",
+    "durationMins": 529,
+    "price": 765,
+    "formattedPrice": "$765",
+    "seatsRemaining": 86,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-62",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "23:43",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "08:02",
+    "arrival": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "durationText": "8hr 19min",
+    "durationMins": 499,
+    "price": 656,
+    "formattedPrice": "$656",
+    "seatsRemaining": 88,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-63",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "22:02",
+    "departure": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "arrivalTime": "02:00",
+    "arrival": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "durationText": "3hr 58min",
+    "durationMins": 238,
+    "price": 540,
+    "formattedPrice": "$540",
+    "seatsRemaining": 151,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-64",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "10:01",
+    "departure": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "arrivalTime": "19:32",
+    "arrival": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "durationText": "9hr 31min",
+    "durationMins": 571,
+    "price": 1025,
+    "formattedPrice": "$1,025",
+    "seatsRemaining": 79,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-65",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "04:41",
+    "departure": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "arrivalTime": "08:45",
+    "arrival": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "durationText": "4hr 4min",
+    "durationMins": 244,
+    "price": 406,
+    "formattedPrice": "$406",
+    "seatsRemaining": 159,
+    "refundableStatus": "Fully Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-66",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "20:54",
+    "departure": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "arrivalTime": "22:55",
+    "arrival": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "durationText": "2hr 1min",
+    "durationMins": 121,
+    "price": 290,
+    "formattedPrice": "$290",
+    "seatsRemaining": 187,
+    "refundableStatus": "Partially Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-67",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "19:00",
+    "departure": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "arrivalTime": "08:28",
+    "arrival": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "durationText": "13hr 28min",
+    "durationMins": 808,
+    "price": 822,
+    "formattedPrice": "$822",
+    "seatsRemaining": 170,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-68",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "00:48",
+    "departure": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "arrivalTime": "06:13",
+    "arrival": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "durationText": "5hr 25min",
+    "durationMins": 325,
+    "price": 701,
+    "formattedPrice": "$701",
+    "seatsRemaining": 8,
+    "refundableStatus": "Fully Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-69",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "15:32",
+    "departure": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "arrivalTime": "18:41",
+    "arrival": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "USA"
+    },
+    "durationText": "3hr 9min",
+    "durationMins": 189,
+    "price": 354,
+    "formattedPrice": "$354",
+    "seatsRemaining": 121,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-70",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "10:06",
+    "departure": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "arrivalTime": "15:50",
+    "arrival": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "durationText": "5hr 44min",
+    "durationMins": 344,
+    "price": 978,
+    "formattedPrice": "$978",
+    "seatsRemaining": 188,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-71",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "01:37",
+    "departure": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "arrivalTime": "15:42",
+    "arrival": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "USA"
+    },
+    "durationText": "14hr 5min",
+    "durationMins": 845,
+    "price": 536,
+    "formattedPrice": "$536",
+    "seatsRemaining": 130,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-72",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "04:58",
+    "departure": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "arrivalTime": "13:38",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "8hr 40min",
+    "durationMins": 520,
+    "price": 688,
+    "formattedPrice": "$688",
+    "seatsRemaining": 185,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-73",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "08:43",
+    "departure": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "arrivalTime": "00:02",
+    "arrival": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "durationText": "15hr 19min",
+    "durationMins": 919,
+    "price": 544,
+    "formattedPrice": "$544",
+    "seatsRemaining": 72,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-74",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "00:42",
+    "departure": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "arrivalTime": "06:09",
+    "arrival": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "USA"
+    },
+    "durationText": "5hr 27min",
+    "durationMins": 327,
+    "price": 343,
+    "formattedPrice": "$343",
+    "seatsRemaining": 32,
+    "refundableStatus": "Partially Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-75",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "14:18",
+    "departure": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "arrivalTime": "03:01",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "12hr 43min",
+    "durationMins": 763,
+    "price": 402,
+    "formattedPrice": "$402",
+    "seatsRemaining": 157,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-76",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "09:17",
+    "departure": {
+      "code": "PEK",
+      "name": "Beijing Capital International",
+      "city": "Beijing",
+      "country": "China"
+    },
+    "arrivalTime": "18:08",
+    "arrival": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "durationText": "8hr 51min",
+    "durationMins": 531,
+    "price": 419,
+    "formattedPrice": "$419",
+    "seatsRemaining": 136,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-77",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "12:23",
+    "departure": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "arrivalTime": "00:18",
+    "arrival": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "durationText": "11hr 55min",
+    "durationMins": 715,
+    "price": 966,
+    "formattedPrice": "$966",
+    "seatsRemaining": 172,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-78",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "09:58",
+    "departure": {
+      "code": "CPT",
+      "name": "Cape Town International",
+      "city": "Cape Town",
+      "country": "South Africa"
+    },
+    "arrivalTime": "14:50",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "4hr 52min",
+    "durationMins": 292,
+    "price": 364,
+    "formattedPrice": "$364",
+    "seatsRemaining": 97,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-79",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "18:53",
+    "departure": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "USA"
+    },
+    "arrivalTime": "08:56",
+    "arrival": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "durationText": "14hr 3min",
+    "durationMins": 843,
+    "price": 152,
+    "formattedPrice": "$152",
+    "seatsRemaining": 98,
+    "refundableStatus": "Partially Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-80",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "21:24",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "07:56",
+    "arrival": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "durationText": "10hr 32min",
+    "durationMins": 632,
+    "price": 714,
+    "formattedPrice": "$714",
+    "seatsRemaining": 192,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-81",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "13:51",
+    "departure": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "arrivalTime": "22:23",
+    "arrival": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "durationText": "8hr 32min",
+    "durationMins": 512,
+    "price": 856,
+    "formattedPrice": "$856",
+    "seatsRemaining": 82,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-82",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "02:52",
+    "departure": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "arrivalTime": "08:08",
+    "arrival": {
+      "code": "PEK",
+      "name": "Beijing Capital International",
+      "city": "Beijing",
+      "country": "China"
+    },
+    "durationText": "5hr 16min",
+    "durationMins": 316,
+    "price": 728,
+    "formattedPrice": "$728",
+    "seatsRemaining": 58,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-83",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "09:45",
+    "departure": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "arrivalTime": "22:28",
+    "arrival": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "durationText": "12hr 43min",
+    "durationMins": 763,
+    "price": 1040,
+    "formattedPrice": "$1,040",
+    "seatsRemaining": 36,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-84",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "19:37",
+    "departure": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "arrivalTime": "09:01",
+    "arrival": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "durationText": "13hr 24min",
+    "durationMins": 804,
+    "price": 345,
+    "formattedPrice": "$345",
+    "seatsRemaining": 28,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-85",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "01:47",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "12:06",
+    "arrival": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "durationText": "10hr 19min",
+    "durationMins": 619,
+    "price": 126,
+    "formattedPrice": "$126",
+    "seatsRemaining": 96,
+    "refundableStatus": "Partially Refundable",
+    "stops": 3,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-86",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "18:31",
+    "departure": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "arrivalTime": "10:17",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "15hr 46min",
+    "durationMins": 946,
+    "price": 151,
+    "formattedPrice": "$151",
+    "seatsRemaining": 17,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-87",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "23:29",
+    "departure": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "arrivalTime": "13:43",
+    "arrival": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "durationText": "14hr 14min",
+    "durationMins": 854,
+    "price": 757,
+    "formattedPrice": "$757",
+    "seatsRemaining": 172,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-88",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "23:58",
+    "departure": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "arrivalTime": "06:36",
+    "arrival": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "durationText": "6hr 38min",
+    "durationMins": 398,
+    "price": 660,
+    "formattedPrice": "$660",
+    "seatsRemaining": 145,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-89",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "17:48",
+    "departure": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "arrivalTime": "08:29",
+    "arrival": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "durationText": "14hr 41min",
+    "durationMins": 881,
+    "price": 1000,
+    "formattedPrice": "$1,000",
+    "seatsRemaining": 199,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-90",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "17:12",
+    "departure": {
+      "code": "PEK",
+      "name": "Beijing Capital International",
+      "city": "Beijing",
+      "country": "China"
+    },
+    "arrivalTime": "22:32",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "5hr 20min",
+    "durationMins": 320,
+    "price": 481,
+    "formattedPrice": "$481",
+    "seatsRemaining": 136,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-91",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "07:53",
+    "departure": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "arrivalTime": "15:36",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "7hr 43min",
+    "durationMins": 463,
+    "price": 1073,
+    "formattedPrice": "$1,073",
+    "seatsRemaining": 149,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-92",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "17:14",
+    "departure": {
+      "code": "CPT",
+      "name": "Cape Town International",
+      "city": "Cape Town",
+      "country": "South Africa"
+    },
+    "arrivalTime": "06:50",
+    "arrival": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "durationText": "13hr 36min",
+    "durationMins": 816,
+    "price": 1004,
+    "formattedPrice": "$1,004",
+    "seatsRemaining": 52,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-93",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "17:11",
+    "departure": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "arrivalTime": "10:58",
+    "arrival": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "durationText": "17hr 47min",
+    "durationMins": 1067,
+    "price": 917,
+    "formattedPrice": "$917",
+    "seatsRemaining": 40,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-94",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "15:52",
+    "departure": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "arrivalTime": "20:02",
+    "arrival": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "durationText": "4hr 10min",
+    "durationMins": 250,
+    "price": 548,
+    "formattedPrice": "$548",
+    "seatsRemaining": 41,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-95",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "12:13",
+    "departure": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "arrivalTime": "19:46",
+    "arrival": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "USA"
+    },
+    "durationText": "7hr 33min",
+    "durationMins": 453,
+    "price": 698,
+    "formattedPrice": "$698",
+    "seatsRemaining": 53,
+    "refundableStatus": "Fully Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-96",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "02:08",
+    "departure": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "arrivalTime": "15:00",
+    "arrival": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "durationText": "12hr 52min",
+    "durationMins": 772,
+    "price": 660,
+    "formattedPrice": "$660",
+    "seatsRemaining": 110,
+    "refundableStatus": "Fully Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-97",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "01:29",
+    "departure": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "arrivalTime": "10:57",
+    "arrival": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "durationText": "9hr 28min",
+    "durationMins": 568,
+    "price": 721,
+    "formattedPrice": "$721",
+    "seatsRemaining": 149,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-98",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "15:13",
+    "departure": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "arrivalTime": "00:09",
+    "arrival": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "durationText": "8hr 56min",
+    "durationMins": 536,
+    "price": 767,
+    "formattedPrice": "$767",
+    "seatsRemaining": 184,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-99",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "11:13",
+    "departure": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "arrivalTime": "17:26",
+    "arrival": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "durationText": "6hr 13min",
+    "durationMins": 373,
+    "price": 614,
+    "formattedPrice": "$614",
+    "seatsRemaining": 75,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-100",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "01:25",
+    "departure": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "USA"
+    },
+    "arrivalTime": "16:26",
+    "arrival": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "durationText": "15hr 1min",
+    "durationMins": 901,
+    "price": 418,
+    "formattedPrice": "$418",
+    "seatsRemaining": 165,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-101",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "09:46",
+    "departure": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "arrivalTime": "21:07",
+    "arrival": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "durationText": "11hr 21min",
+    "durationMins": 681,
+    "price": 451,
+    "formattedPrice": "$451",
+    "seatsRemaining": 115,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-102",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "19:38",
+    "departure": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "arrivalTime": "10:28",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "14hr 50min",
+    "durationMins": 890,
+    "price": 991,
+    "formattedPrice": "$991",
+    "seatsRemaining": 38,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-103",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "07:24",
+    "departure": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "arrivalTime": "23:58",
+    "arrival": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "durationText": "16hr 34min",
+    "durationMins": 994,
+    "price": 645,
+    "formattedPrice": "$645",
+    "seatsRemaining": 199,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-104",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "06:50",
+    "departure": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "arrivalTime": "15:56",
+    "arrival": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "durationText": "9hr 6min",
+    "durationMins": 546,
+    "price": 298,
+    "formattedPrice": "$298",
+    "seatsRemaining": 172,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-105",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "20:18",
+    "departure": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "arrivalTime": "10:30",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "14hr 12min",
+    "durationMins": 852,
+    "price": 816,
+    "formattedPrice": "$816",
+    "seatsRemaining": 37,
+    "refundableStatus": "Partially Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-106",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "06:09",
+    "departure": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "arrivalTime": "20:29",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "14hr 20min",
+    "durationMins": 860,
+    "price": 820,
+    "formattedPrice": "$820",
+    "seatsRemaining": 11,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-107",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "17:57",
+    "departure": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "arrivalTime": "21:34",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "3hr 37min",
+    "durationMins": 217,
+    "price": 656,
+    "formattedPrice": "$656",
+    "seatsRemaining": 96,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-108",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "04:43",
+    "departure": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "arrivalTime": "07:17",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "2hr 34min",
+    "durationMins": 154,
+    "price": 321,
+    "formattedPrice": "$321",
+    "seatsRemaining": 144,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-109",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "01:06",
+    "departure": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "arrivalTime": "09:50",
+    "arrival": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "durationText": "8hr 44min",
+    "durationMins": 524,
+    "price": 1052,
+    "formattedPrice": "$1,052",
+    "seatsRemaining": 194,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-110",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "21:56",
+    "departure": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "arrivalTime": "02:55",
+    "arrival": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "durationText": "4hr 59min",
+    "durationMins": 299,
+    "price": 803,
+    "formattedPrice": "$803",
+    "seatsRemaining": 122,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-111",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "04:54",
+    "departure": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "arrivalTime": "22:34",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "17hr 40min",
+    "durationMins": 1060,
+    "price": 492,
+    "formattedPrice": "$492",
+    "seatsRemaining": 73,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-112",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "02:48",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "07:19",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "4hr 31min",
+    "durationMins": 271,
+    "price": 239,
+    "formattedPrice": "$239",
+    "seatsRemaining": 103,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-113",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "19:25",
+    "departure": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "arrivalTime": "00:18",
+    "arrival": {
+      "code": "CPT",
+      "name": "Cape Town International",
+      "city": "Cape Town",
+      "country": "South Africa"
+    },
+    "durationText": "4hr 53min",
+    "durationMins": 293,
+    "price": 943,
+    "formattedPrice": "$943",
+    "seatsRemaining": 103,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-114",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "22:16",
+    "departure": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "arrivalTime": "09:44",
+    "arrival": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "durationText": "11hr 28min",
+    "durationMins": 688,
+    "price": 1011,
+    "formattedPrice": "$1,011",
+    "seatsRemaining": 35,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-115",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "07:27",
+    "departure": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "arrivalTime": "18:21",
+    "arrival": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "durationText": "10hr 54min",
+    "durationMins": 654,
+    "price": 1116,
+    "formattedPrice": "$1,116",
+    "seatsRemaining": 91,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-116",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "22:25",
+    "departure": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "arrivalTime": "03:13",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "4hr 48min",
+    "durationMins": 288,
+    "price": 264,
+    "formattedPrice": "$264",
+    "seatsRemaining": 108,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-117",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "22:46",
+    "departure": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "arrivalTime": "02:43",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "3hr 57min",
+    "durationMins": 237,
+    "price": 467,
+    "formattedPrice": "$467",
+    "seatsRemaining": 153,
+    "refundableStatus": "Non-Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-118",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "08:52",
+    "departure": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "arrivalTime": "11:38",
+    "arrival": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "durationText": "2hr 46min",
+    "durationMins": 166,
+    "price": 1041,
+    "formattedPrice": "$1,041",
+    "seatsRemaining": 109,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-119",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "06:59",
+    "departure": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "arrivalTime": "12:28",
+    "arrival": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "durationText": "5hr 29min",
+    "durationMins": 329,
+    "price": 389,
+    "formattedPrice": "$389",
+    "seatsRemaining": 20,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-120",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "05:53",
+    "departure": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "arrivalTime": "20:00",
+    "arrival": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "durationText": "14hr 7min",
+    "durationMins": 847,
+    "price": 538,
+    "formattedPrice": "$538",
+    "seatsRemaining": 106,
+    "refundableStatus": "Fully Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-121",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "02:59",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "06:24",
+    "arrival": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "durationText": "3hr 25min",
+    "durationMins": 205,
+    "price": 166,
+    "formattedPrice": "$166",
+    "seatsRemaining": 139,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-122",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "11:20",
+    "departure": {
+      "code": "AMS",
+      "name": "Amsterdam Airport Schiphol",
+      "city": "Amsterdam",
+      "country": "Netherlands"
+    },
+    "arrivalTime": "00:57",
+    "arrival": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "durationText": "13hr 37min",
+    "durationMins": 817,
+    "price": 524,
+    "formattedPrice": "$524",
+    "seatsRemaining": 27,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-123",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "21:36",
+    "departure": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "arrivalTime": "01:08",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "3hr 32min",
+    "durationMins": 212,
+    "price": 773,
+    "formattedPrice": "$773",
+    "seatsRemaining": 155,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-124",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "12:00",
+    "departure": {
+      "code": "CPT",
+      "name": "Cape Town International",
+      "city": "Cape Town",
+      "country": "South Africa"
+    },
+    "arrivalTime": "04:19",
+    "arrival": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "durationText": "16hr 19min",
+    "durationMins": 979,
+    "price": 989,
+    "formattedPrice": "$989",
+    "seatsRemaining": 180,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-125",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "04:55",
+    "departure": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "arrivalTime": "12:32",
+    "arrival": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "durationText": "7hr 37min",
+    "durationMins": 457,
+    "price": 602,
+    "formattedPrice": "$602",
+    "seatsRemaining": 180,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-126",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "20:58",
+    "departure": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "arrivalTime": "01:53",
+    "arrival": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "durationText": "4hr 55min",
+    "durationMins": 295,
+    "price": 1030,
+    "formattedPrice": "$1,030",
+    "seatsRemaining": 145,
+    "refundableStatus": "Partially Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-127",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "00:44",
+    "departure": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "arrivalTime": "18:49",
+    "arrival": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "durationText": "18hr 5min",
+    "durationMins": 1085,
+    "price": 853,
+    "formattedPrice": "$853",
+    "seatsRemaining": 123,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-128",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "10:08",
+    "departure": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "arrivalTime": "13:33",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "3hr 25min",
+    "durationMins": 205,
+    "price": 344,
+    "formattedPrice": "$344",
+    "seatsRemaining": 70,
+    "refundableStatus": "Fully Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-129",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "06:15",
+    "departure": {
+      "code": "IST",
+      "name": "Istanbul Airport",
+      "city": "Istanbul",
+      "country": "Turkey"
+    },
+    "arrivalTime": "12:15",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "6hr 0min",
+    "durationMins": 360,
+    "price": 857,
+    "formattedPrice": "$857",
+    "seatsRemaining": 111,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-130",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "22:10",
+    "departure": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "arrivalTime": "10:41",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "12hr 31min",
+    "durationMins": 751,
+    "price": 219,
+    "formattedPrice": "$219",
+    "seatsRemaining": 10,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-131",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "19:26",
+    "departure": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "arrivalTime": "22:34",
+    "arrival": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "durationText": "3hr 8min",
+    "durationMins": 188,
+    "price": 958,
+    "formattedPrice": "$958",
+    "seatsRemaining": 28,
+    "refundableStatus": "Fully Refundable",
+    "stops": 0,
+    "baggage": [
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-132",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "05:40",
+    "departure": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "arrivalTime": "21:12",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "15hr 32min",
+    "durationMins": 932,
+    "price": 403,
+    "formattedPrice": "$403",
+    "seatsRemaining": 146,
+    "refundableStatus": "Non-Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-133",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "00:11",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "11:51",
+    "arrival": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "durationText": "11hr 40min",
+    "durationMins": 700,
+    "price": 884,
+    "formattedPrice": "$884",
+    "seatsRemaining": 128,
+    "refundableStatus": "Fully Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-134",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "03:11",
+    "departure": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "arrivalTime": "06:47",
+    "arrival": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "durationText": "3hr 36min",
+    "durationMins": 216,
+    "price": 631,
+    "formattedPrice": "$631",
+    "seatsRemaining": 167,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-135",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "03:36",
+    "departure": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "arrivalTime": "17:38",
+    "arrival": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "durationText": "14hr 2min",
+    "durationMins": 842,
+    "price": 747,
+    "formattedPrice": "$747",
+    "seatsRemaining": 162,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-136",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "09:43",
+    "departure": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "arrivalTime": "19:47",
+    "arrival": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "durationText": "10hr 4min",
+    "durationMins": 604,
+    "price": 308,
+    "formattedPrice": "$308",
+    "seatsRemaining": 95,
+    "refundableStatus": "Fully Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-137",
+    "airlineName": "BOP Links",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "00:23",
+    "departure": {
+      "code": "DEL",
+      "name": "Indira Gandhi International",
+      "city": "New Delhi",
+      "country": "India"
+    },
+    "arrivalTime": "17:27",
+    "arrival": {
+      "code": "CDG",
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "France"
+    },
+    "durationText": "17hr 4min",
+    "durationMins": 1024,
+    "price": 894,
+    "formattedPrice": "$894",
+    "seatsRemaining": 190,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-138",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "19:32",
+    "departure": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "arrivalTime": "01:56",
+    "arrival": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "durationText": "6hr 24min",
+    "durationMins": 384,
+    "price": 448,
+    "formattedPrice": "$448",
+    "seatsRemaining": 38,
+    "refundableStatus": "Fully Refundable",
+    "stops": 1,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-139",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "17:47",
+    "departure": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "arrivalTime": "01:06",
+    "arrival": {
+      "code": "DXB",
+      "name": "Dubai International Airport",
+      "city": "Dubai",
+      "country": "UAE"
+    },
+    "durationText": "7hr 19min",
+    "durationMins": 439,
+    "price": 479,
+    "formattedPrice": "$479",
+    "seatsRemaining": 99,
+    "refundableStatus": "Fully Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-140",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "16:27",
+    "departure": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "arrivalTime": "05:20",
+    "arrival": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "durationText": "12hr 53min",
+    "durationMins": 773,
+    "price": 989,
+    "formattedPrice": "$989",
+    "seatsRemaining": 78,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-141",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "11:06",
+    "departure": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "arrivalTime": "19:52",
+    "arrival": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "durationText": "8hr 46min",
+    "durationMins": 526,
+    "price": 853,
+    "formattedPrice": "$853",
+    "seatsRemaining": 80,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-142",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "00:57",
+    "departure": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "arrivalTime": "13:42",
+    "arrival": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "durationText": "12hr 45min",
+    "durationMins": 765,
+    "price": 754,
+    "formattedPrice": "$754",
+    "seatsRemaining": 36,
+    "refundableStatus": "Partially Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-143",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "17:52",
+    "departure": {
+      "code": "SIN",
+      "name": "Changi Airport",
+      "city": "Singapore",
+      "country": "Singapore"
+    },
+    "arrivalTime": "12:24",
+    "arrival": {
+      "code": "MBA",
+      "name": "Moi International Airport",
+      "city": "Mombasa",
+      "country": "Kenya"
+    },
+    "durationText": "18hr 32min",
+    "durationMins": 1112,
+    "price": 264,
+    "formattedPrice": "$264",
+    "seatsRemaining": 189,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-144",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "07:32",
+    "departure": {
+      "code": "GRU",
+      "name": "Guarulhos International",
+      "city": "São Paulo",
+      "country": "Brazil"
+    },
+    "arrivalTime": "18:45",
+    "arrival": {
+      "code": "NBO",
+      "name": "Jomo Kenyatta International",
+      "city": "Nairobi",
+      "country": "Kenya"
+    },
+    "durationText": "11hr 13min",
+    "durationMins": 673,
+    "price": 600,
+    "formattedPrice": "$600",
+    "seatsRemaining": 53,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-145",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "13:05",
+    "departure": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "arrivalTime": "00:20",
+    "arrival": {
+      "code": "HND",
+      "name": "Haneda Airport",
+      "city": "Tokyo",
+      "country": "Japan"
+    },
+    "durationText": "11hr 15min",
+    "durationMins": 675,
+    "price": 713,
+    "formattedPrice": "$713",
+    "seatsRemaining": 42,
+    "refundableStatus": "Partially Refundable",
+    "stops": 2,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-146",
+    "airlineName": "ABC Airlines",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "11:50",
+    "departure": {
+      "code": "FRA",
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "Germany"
+    },
+    "arrivalTime": "01:24",
+    "arrival": {
+      "code": "JFK",
+      "name": "John F. Kennedy International",
+      "city": "New York",
+      "country": "USA"
+    },
+    "durationText": "13hr 34min",
+    "durationMins": 814,
+    "price": 849,
+    "formattedPrice": "$849",
+    "seatsRemaining": 175,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-147",
+    "airlineName": "EDF Express",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "12:16",
+    "departure": {
+      "code": "ORD",
+      "name": "O'Hare International",
+      "city": "Chicago",
+      "country": "USA"
+    },
+    "arrivalTime": "01:23",
+    "arrival": {
+      "code": "SYD",
+      "name": "Kingsford Smith Airport",
+      "city": "Sydney",
+      "country": "Australia"
+    },
+    "durationText": "13hr 7min",
+    "durationMins": 787,
+    "price": 542,
+    "formattedPrice": "$542",
+    "seatsRemaining": 134,
+    "refundableStatus": "Non-Refundable",
+    "stops": 3,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-148",
+    "airlineName": "XYZ Airways",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "05:34",
+    "departure": {
+      "code": "LAX",
+      "name": "Los Angeles International",
+      "city": "Los Angeles",
+      "country": "USA"
+    },
+    "arrivalTime": "13:02",
+    "arrival": {
+      "code": "LHR",
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "United Kingdom"
+    },
+    "durationText": "7hr 28min",
+    "durationMins": 448,
+    "price": 1127,
+    "formattedPrice": "$1,127",
+    "seatsRemaining": 10,
+    "refundableStatus": "Fully Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  },
+  {
+    "id": "flight-149",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "11:08",
+    "departure": {
+      "code": "BOM",
+      "name": "Chhatrapati Shivaji International",
+      "city": "Mumbai",
+      "country": "India"
+    },
+    "arrivalTime": "19:07",
+    "arrival": {
+      "code": "BKK",
+      "name": "Suvarnabhumi Airport",
+      "city": "Bangkok",
+      "country": "Thailand"
+    },
+    "durationText": "7hr 59min",
+    "durationMins": 479,
+    "price": 570,
+    "formattedPrice": "$570",
+    "seatsRemaining": 165,
+    "refundableStatus": "Partially Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag",
+      "Checked bag"
+    ]
+  },
+  {
+    "id": "flight-150",
+    "airlineName": "ABC Air Technologies",
+    "travelClass": "Economy",
+    "departureDate": "Sun, 29 Jan 2023",
+    "departureTime": "08:16",
+    "departure": {
+      "code": "PEK",
+      "name": "Beijing Capital International",
+      "city": "Beijing",
+      "country": "China"
+    },
+    "arrivalTime": "14:01",
+    "arrival": {
+      "code": "CPT",
+      "name": "Cape Town International",
+      "city": "Cape Town",
+      "country": "South Africa"
+    },
+    "durationText": "5hr 45min",
+    "durationMins": 345,
+    "price": 451,
+    "formattedPrice": "$451",
+    "seatsRemaining": 183,
+    "refundableStatus": "Non-Refundable",
+    "stops": 0,
+    "baggage": [
+      "Carry-on bag"
+    ]
+  }
+]
