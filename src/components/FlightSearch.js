@@ -13,6 +13,10 @@ import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import FlightLandingIcon from "@mui/icons-material/FlightLand";
 import PersonIcon from "@mui/icons-material/Person";
 import SyncAltIcon from "@mui/icons-material/SyncAlt";
+import {
+  TRAVEL_CLASS_OPTIONS,
+  TRIP_TYPE_OPTIONS,
+} from "@/constants/flightConstants";
 
 export default function FlightSearch() {
   const [flightType, setFlightType] = useState("");
@@ -56,20 +60,19 @@ export default function FlightSearch() {
             onChange={handleFlightClassChange}
             displayEmpty
             sx={styles.select}
-            renderValue={(value) => {
-              if (!value) {
-                return <Box sx={styles.flexCenter}>Select Class</Box>;
-              }
-              return (
-                <Box sx={styles.flexCenter}>
-                  {value.charAt(0).toUpperCase() + value.slice(1)}
-                </Box>
-              );
-            }}
+            renderValue={(value) => (
+              <Box sx={styles.flexCenter}>
+                {value
+                  ? TRAVEL_CLASS_OPTIONS.find((o) => o.value === value)?.label
+                  : "Select Class"}
+              </Box>
+            )}
           >
-            <MenuItem value="economy">Economy</MenuItem>
-            <MenuItem value="business">Business</MenuItem>
-            <MenuItem value="first-class">First Class</MenuItem>
+            {TRAVEL_CLASS_OPTIONS.map((opt) => (
+              <MenuItem key={opt.value} value={opt.value}>
+                {opt.label}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
 

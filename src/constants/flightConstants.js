@@ -60,11 +60,16 @@ export const TRIP_TYPE_OPTIONS = [
 
 // Airlines list
 export const AIRLINES = [
-  "ABC Air Technologies",
-  "ABC Airlines",
-  "XYZ Airways",
-  "BOP Links",
-  "EDF Express",
+  "IndiGo",
+  "Air India",
+  "SpiceJet",
+  "GoAir",
+  "Vistara",
+  "Emirates",
+  "Qatar Airways",
+  "Etihad Airways",
+  "Air Arabia",
+  "flydubai",
 ];
 
 // Baggage options
@@ -85,74 +90,19 @@ export const REFUNDABLE_STATUS = {
   FULLY: "Fully Refundable",
 };
 
-// Airports
-export const AIRPORTS = [
+// Trip category
+export const TRIP_CATEGORY = {
+  DOMESTIC: "domestic",
+  INTERNATIONAL: "international",
+};
+
+// Indian airports
+export const INDIAN_AIRPORTS = [
   {
-    code: "MBA",
-    name: "Moi International Airport",
-    city: "Mombasa",
-    country: "Kenya",
-  },
-  {
-    code: "NBO",
-    name: "Jomo Kenyatta International",
-    city: "Nairobi",
-    country: "Kenya",
-  },
-  {
-    code: "LHR",
-    name: "Heathrow Airport",
-    city: "London",
-    country: "United Kingdom",
-  },
-  {
-    code: "CDG",
-    name: "Charles de Gaulle Airport",
-    city: "Paris",
-    country: "France",
-  },
-  {
-    code: "DXB",
-    name: "Dubai International Airport",
-    city: "Dubai",
-    country: "UAE",
-  },
-  {
-    code: "SIN",
-    name: "Changi Airport",
-    city: "Singapore",
-    country: "Singapore",
-  },
-  {
-    code: "SYD",
-    name: "Kingsford Smith Airport",
-    city: "Sydney",
-    country: "Australia",
-  },
-  {
-    code: "JFK",
-    name: "John F. Kennedy International",
-    city: "New York",
-    country: "USA",
-  },
-  {
-    code: "LAX",
-    name: "Los Angeles International",
-    city: "Los Angeles",
-    country: "USA",
-  },
-  {
-    code: "ORD",
-    name: "O'Hare International",
-    city: "Chicago",
-    country: "USA",
-  },
-  { code: "HND", name: "Haneda Airport", city: "Tokyo", country: "Japan" },
-  {
-    code: "PEK",
-    name: "Beijing Capital International",
-    city: "Beijing",
-    country: "China",
+    code: "BOM",
+    name: "Chhatrapati Shivaji International",
+    city: "Mumbai",
+    country: "India",
   },
   {
     code: "DEL",
@@ -161,45 +111,104 @@ export const AIRPORTS = [
     country: "India",
   },
   {
-    code: "BOM",
-    name: "Chhatrapati Shivaji International",
-    city: "Mumbai",
+    code: "BLR",
+    name: "Kempegowda International",
+    city: "Bengaluru",
     country: "India",
   },
   {
-    code: "CPT",
-    name: "Cape Town International",
-    city: "Cape Town",
-    country: "South Africa",
+    code: "MAA",
+    name: "Chennai International",
+    city: "Chennai",
+    country: "India",
   },
   {
-    code: "GRU",
-    name: "Guarulhos International",
-    city: "São Paulo",
-    country: "Brazil",
+    code: "HYD",
+    name: "Rajiv Gandhi International",
+    city: "Hyderabad",
+    country: "India",
   },
   {
-    code: "AMS",
-    name: "Amsterdam Airport Schiphol",
-    city: "Amsterdam",
-    country: "Netherlands",
+    code: "COK",
+    name: "Cochin International",
+    city: "Kochi",
+    country: "India",
   },
   {
-    code: "FRA",
-    name: "Frankfurt Airport",
-    city: "Frankfurt",
-    country: "Germany",
+    code: "CCU",
+    name: "Netaji Subhas Chandra Bose Intl",
+    city: "Kolkata",
+    country: "India",
   },
   {
-    code: "IST",
-    name: "Istanbul Airport",
-    city: "Istanbul",
-    country: "Turkey",
+    code: "AMD",
+    name: "Sardar Vallabhbhai Patel Intl",
+    city: "Ahmedabad",
+    country: "India",
+  },
+  { code: "PNQ", name: "Pune Airport", city: "Pune", country: "India" },
+  { code: "GOI", name: "Goa International", city: "Goa", country: "India" },
+  {
+    code: "JAI",
+    name: "Jaipur International",
+    city: "Jaipur",
+    country: "India",
   },
   {
-    code: "BKK",
-    name: "Suvarnabhumi Airport",
-    city: "Bangkok",
-    country: "Thailand",
+    code: "LKO",
+    name: "Chaudhary Charan Singh Intl",
+    city: "Lucknow",
+    country: "India",
   },
 ];
+
+// Middle East airports
+export const MIDDLE_EAST_AIRPORTS = [
+  { code: "DXB", name: "Dubai International", city: "Dubai", country: "UAE" },
+  {
+    code: "AUH",
+    name: "Abu Dhabi International",
+    city: "Abu Dhabi",
+    country: "UAE",
+  },
+  {
+    code: "SHJ",
+    name: "Sharjah International",
+    city: "Sharjah",
+    country: "UAE",
+  },
+  { code: "DOH", name: "Hamad International", city: "Doha", country: "Qatar" },
+  {
+    code: "RUH",
+    name: "King Khalid International",
+    city: "Riyadh",
+    country: "Saudi Arabia",
+  },
+  {
+    code: "JED",
+    name: "King Abdulaziz International",
+    city: "Jeddah",
+    country: "Saudi Arabia",
+  },
+  {
+    code: "MCT",
+    name: "Muscat International",
+    city: "Muscat",
+    country: "Oman",
+  },
+  {
+    code: "KWI",
+    name: "Kuwait International",
+    city: "Kuwait City",
+    country: "Kuwait",
+  },
+  {
+    code: "BAH",
+    name: "Bahrain International",
+    city: "Manama",
+    country: "Bahrain",
+  },
+];
+
+// Combined for use when no category filter is active
+export const AIRPORTS = [...INDIAN_AIRPORTS, ...MIDDLE_EAST_AIRPORTS];
