@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
@@ -13,7 +13,7 @@ import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 import BoltIcon from "@mui/icons-material/Bolt";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 
-import { useFlightStore } from "@/store/useFlightStore";
+import { useFlightStore, sortFlights } from "@/store/useFlightStore";
 import { SORT_BY, REFUNDABLE_STATUS } from "@/constants/flightConstants";
 
 const refundableColor = (status) => {
@@ -26,14 +26,19 @@ const refundableColor = (status) => {
 const FlightResults = () => {
   const [tabValue, setTabValue] = useState(0);
 
-  const { displayedFlights, sortBy, setSortBy } = useFlightStore();
+  const { filteredFlights, sortBy, setSortBy } = useFlightStore();
 
-  const currentFlights = displayedFlights[sortBy] ?? [];
+  // Sort inline — fast for 200 flights, no pre-computation needed
+  const currentFlights = useMemo(
+    () => sortFlights(filteredFlights, sortBy),
+    [filteredFlights, sortBy],
+  );
 
-  const tabSummary = (key) => {
-    const list = displayedFlights[key];
-    if (!list || list.length === 0) return "—";
-    return `$${list[0].price.toLocaleString()} · ${list[0].durationText}`;
+  // Best price + duration for each tab header
+  const tabSummary = (tabSortBy) => {
+    const sorted = sortFlights(filteredFlights, tabSortBy);
+    if (!sorted.length) return "—";
+    return `$${sorted[0].price.toLocaleString()} · ${sorted[0].durationText}`;
   };
 
   const handleTabChange = (_, newValue) => {

@@ -8,25 +8,6 @@ import {
   TRAVEL_CLASS,
 } from "@/constants/flightConstants";
 
-function sortFlights(flights, sortBy) {
-  const copy = [...flights];
-  if (sortBy === SORT_BY.CHEAPEST)
-    return copy.sort((a, b) => a.price - b.price);
-  if (sortBy === SORT_BY.FASTEST)
-    return copy.sort((a, b) => a.durationMins - b.durationMins);
-  return copy.sort(
-    (a, b) => a.price + a.durationMins - (b.price + b.durationMins),
-  );
-}
-
-function buildDisplayedFlights(flights) {
-  return {
-    [SORT_BY.RECOMMENDED]: sortFlights(flights, SORT_BY.RECOMMENDED),
-    [SORT_BY.FASTEST]: sortFlights(flights, SORT_BY.FASTEST),
-    [SORT_BY.CHEAPEST]: sortFlights(flights, SORT_BY.CHEAPEST),
-  };
-}
-
 function filterFlights(flights, filters) {
   return flights.filter((flight) => {
     if (filters.stops.length > 0) {
@@ -86,25 +67,66 @@ function buildFilterMeta(flights) {
   };
 }
 
+// Exported so FlightResults can sort its local copy without store involvement
+export function sortFlights(flights, sortBy) {
+  const copy = [...flights];
+  if (sortBy === SORT_BY.CHEAPEST)
+    return copy.sort((a, b) => a.price - b.price);
+  if (sortBy === SORT_BY.FASTEST)
+    return copy.sort((a, b) => a.durationMins - b.durationMins);
+  return copy.sort(
+    (a, b) => a.price + a.durationMins - (b.price + b.durationMins),
+  );
+}
+
+function formatDateToDisplay(iso) {
+  const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const MONTHS = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  const d = new Date(iso);
+  return `${DAYS[d.getDay()]}, ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+// --- Initial state ---
+
 const emptyFilters = { stops: [], airlines: [], baggage: [] };
-const initialDisplayedFlights = buildDisplayedFlights(mockFlights);
-const initialFilterMeta = buildFilterMeta(mockFlights);
+const initialMeta = buildFilterMeta(mockFlights);
+
+// --- Store ---
 
 export const useFlightStore = create(
   devtools(
     (set, get) => ({
       allFlights: mockFlights,
-      displayedFlights: initialDisplayedFlights,
-      filterMeta: initialFilterMeta,
+
+      // The current search scope — sidebar filters narrow within this
+      searchResults: mockFlights,
+
+      // The flights currently shown (search results narrowed by sidebar filters)
+      filteredFlights: mockFlights,
+
+      filterMeta: initialMeta,
 
       tripType: TRIP_TYPE.ROUND_TRIP,
       travelClass: TRAVEL_CLASS.ECONOMY,
       sortBy: SORT_BY.RECOMMENDED,
 
-      // What the user is selecting in the sidebar (not yet applied)
+      // Sidebar selections not yet committed
       pendingFilters: { ...emptyFilters },
 
-      // What is currently applied to the flight results
+      // Sidebar selections currently applied to filteredFlights
       appliedFilters: { ...emptyFilters },
 
       setTripType: (tripType) => set({ tripType }, false, "setTripType"),
@@ -112,7 +134,7 @@ export const useFlightStore = create(
         set({ travelClass }, false, "setTravelClass"),
       setSortBy: (sortBy) => set({ sortBy }, false, "setSortBy"),
 
-      // Only updates the pending selection — does NOT filter the results
+      // Checkbox toggle — only updates pendingFilters, no visible change yet
       toggleFilter: (category, value) => {
         set(
           (state) => {
@@ -129,37 +151,67 @@ export const useFlightStore = create(
         );
       },
 
-      // Called on "Apply Filters" — commits pending to applied and re-sorts
+      // Apply Filters button — narrows filteredFlights within searchResults
       applyFiltersAndSort: () => {
-        const { allFlights, pendingFilters } = get();
+        const { searchResults, pendingFilters } = get();
         const hasFilters = Object.values(pendingFilters).some(
           (f) => f.length > 0,
         );
-        const source = hasFilters
-          ? filterFlights(allFlights, pendingFilters)
-          : allFlights;
+        const filtered = hasFilters
+          ? filterFlights(searchResults, pendingFilters)
+          : searchResults;
         set(
-          {
-            appliedFilters: { ...pendingFilters },
-            displayedFlights: buildDisplayedFlights(source),
-          },
+          { appliedFilters: { ...pendingFilters }, filteredFlights: filtered },
           false,
           "applyFiltersAndSort",
         );
       },
 
-      // Clears both pending and applied
+      // Reset sidebar — restore filteredFlights to current searchResults
       resetFilters: () => {
+        const { searchResults } = get();
         set(
           {
             pendingFilters: { ...emptyFilters },
             appliedFilters: { ...emptyFilters },
             sortBy: SORT_BY.RECOMMENDED,
-            displayedFlights: initialDisplayedFlights,
-            filterMeta: initialFilterMeta,
+            filteredFlights: searchResults,
+            filterMeta: buildFilterMeta(searchResults),
           },
           false,
           "resetFilters",
+        );
+      },
+
+      // Search button — filters allFlights, resets sidebar
+      applySearch: ({ travelClass, tripCategory, from, to, departureDate }) => {
+        const { allFlights } = get();
+
+        const results = allFlights.filter((flight) => {
+          if (travelClass && flight.travelClass !== travelClass) return false;
+          if (tripCategory && flight.tripCategory !== tripCategory)
+            return false;
+          if (from && flight.departure.code !== from) return false;
+          if (to && flight.arrival.code !== to) return false;
+          if (
+            departureDate &&
+            flight.departureDate !== formatDateToDisplay(departureDate)
+          )
+            return false;
+          return true;
+        });
+
+        set(
+          {
+            searchResults: results,
+            filteredFlights: results,
+            filterMeta: buildFilterMeta(results),
+            pendingFilters: { ...emptyFilters },
+            appliedFilters: { ...emptyFilters },
+            sortBy: SORT_BY.RECOMMENDED,
+          },
+          false,
+          "applySearch",
         );
       },
     }),

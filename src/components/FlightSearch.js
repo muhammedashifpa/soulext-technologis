@@ -16,18 +16,59 @@ import SyncAltIcon from "@mui/icons-material/SyncAlt";
 import {
   TRAVEL_CLASS_OPTIONS,
   TRIP_TYPE_OPTIONS,
+  TRIP_CATEGORY_OPTIONS,
+  AIRPORTS,
+  INDIAN_AIRPORTS,
+  TRIP_CATEGORY,
 } from "@/constants/flightConstants";
+import { useFlightStore } from "@/store/useFlightStore";
 
 export default function FlightSearch() {
-  const [flightType, setFlightType] = useState("");
-  const [flightClass, setFlightClass] = useState("");
-  const [tripType, setTripType] = useState("");
-  const [departureDate, setDepartureDate] = useState("");
-  const [returnDate, setReturnDate] = useState("");
+  const applySearch = useFlightStore((s) => s.applySearch);
 
-  const handleFlightTypeChange = (event) => setFlightType(event.target.value);
-  const handleFlightClassChange = (event) => setFlightClass(event.target.value);
-  const handleTripTypeChange = (event) => setTripType(event.target.value);
+  const [flightType, setFlightType] = useState("");
+  const [travelClass, setTravelClass] = useState("");
+  const [tripCategory, setTripCategory] = useState("");
+  const [fromCode, setFromCode] = useState("");
+  const [toCode, setToCode] = useState("");
+  const [departureDate, setDepartureDate] = useState("");
+
+  const handleTripCategoryChange = (e) => {
+    setTripCategory(e.target.value);
+    setFromCode("");
+    setToCode("");
+  };
+
+  // Derive airport lists based on selections
+  const fromAirports =
+    tripCategory === TRIP_CATEGORY.DOMESTIC ? INDIAN_AIRPORTS : AIRPORTS;
+
+  const fromCountry = AIRPORTS.find((a) => a.code === fromCode)?.country;
+
+  const toAirports = (() => {
+    if (tripCategory === TRIP_CATEGORY.DOMESTIC) {
+      // Same country as From, exclude the selected From airport
+      return fromCode
+        ? INDIAN_AIRPORTS.filter((a) => a.code !== fromCode)
+        : INDIAN_AIRPORTS;
+    }
+    if (tripCategory === TRIP_CATEGORY.INTERNATIONAL && fromCode) {
+      // Any airport NOT in the same country as From
+      return AIRPORTS.filter((a) => a.country !== fromCountry);
+    }
+    return AIRPORTS;
+  })();
+
+  const handleSearch = () => {
+    applySearch({
+      travelClass,
+      tripCategory,
+      from: fromCode,
+      to: toCode,
+      departureDate,
+    });
+  };
+
   return (
     <Box>
       {/* Row 1: Dropdowns */}
@@ -35,29 +76,29 @@ export default function FlightSearch() {
         <FormControl size="small">
           <Select
             value={flightType}
-            onChange={handleFlightTypeChange}
+            onChange={(e) => setFlightType(e.target.value)}
             displayEmpty
             sx={styles.select}
-            renderValue={(value) => {
-              if (!value) {
-                return <Box sx={styles.flexCenter}>Select Flights</Box>;
-              }
-              return (
-                <Box sx={styles.flexCenter}>
-                  {value === "one-way" ? "One way" : "Round trip"}
-                </Box>
-              );
-            }}
+            renderValue={(value) => (
+              <Box sx={styles.flexCenter}>
+                {value
+                  ? TRIP_TYPE_OPTIONS.find((o) => o.value === value)?.label
+                  : "Select Flights"}
+              </Box>
+            )}
           >
-            <MenuItem value="one-way">One way</MenuItem>
-            <MenuItem value="round-trip">Round trip</MenuItem>
+            {TRIP_TYPE_OPTIONS.map((opt) => (
+              <MenuItem key={opt.value} value={opt.value}>
+                {opt.label}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
 
         <FormControl size="small">
           <Select
-            value={flightClass}
-            onChange={handleFlightClassChange}
+            value={travelClass}
+            onChange={(e) => setTravelClass(e.target.value)}
             displayEmpty
             sx={styles.select}
             renderValue={(value) => (
@@ -78,55 +119,84 @@ export default function FlightSearch() {
 
         <FormControl size="small">
           <Select
-            value={tripType}
-            onChange={handleTripTypeChange}
+            value={tripCategory}
+            onChange={handleTripCategoryChange}
             displayEmpty
             sx={styles.select}
-            renderValue={(value) => {
-              if (!value) {
-                return <Box sx={styles.flexCenter}>Select Trip</Box>;
-              }
-              return (
-                <Box sx={styles.flexCenter}>
-                  {value.charAt(0).toUpperCase() + value.slice(1)}
-                </Box>
-              );
-            }}
+            renderValue={(value) => (
+              <Box sx={styles.flexCenter}>
+                {value
+                  ? TRIP_CATEGORY_OPTIONS.find((o) => o.value === value)?.label
+                  : "Select Trip"}
+              </Box>
+            )}
           >
-            <MenuItem value="domestic">Domestic</MenuItem>
-            <MenuItem value="international">International</MenuItem>
+            {TRIP_CATEGORY_OPTIONS.map((opt) => (
+              <MenuItem key={opt.value} value={opt.value}>
+                {opt.label}
+              </MenuItem>
+            ))}
           </Select>
         </FormControl>
       </Stack>
 
       {/* Row 2: Search Controls */}
       <Stack direction="row" spacing={1} alignItems="stretch">
-        <TextField
-          placeholder="From"
-          variant="outlined"
-          sx={styles.textFieldFlex12}
-          InputProps={{
-            startAdornment: <FlightTakeoffIcon sx={styles.iconMarginRight} />,
-            sx: styles.textFieldInputProps,
-          }}
-        />
+        <FormControl sx={styles.textFieldFlex12}>
+          <Select
+            value={fromCode}
+            onChange={(e) => setFromCode(e.target.value)}
+            displayEmpty
+            sx={styles.airportSelect}
+            startAdornment={<FlightTakeoffIcon sx={styles.iconAdornment} />}
+            renderValue={(v) => (
+              <Box sx={styles.flexCenter}>
+                {v ? AIRPORTS.find((a) => a.code === v)?.city : "From"}
+              </Box>
+            )}
+          >
+            {fromAirports.map((a) => (
+              <MenuItem key={a.code} value={a.code}>
+                {a.city} ({a.code}) — {a.country}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
 
         <Box sx={styles.flexCenter}>
-          <IconButton size="large" sx={styles.iconButton}>
-            <SyncAltIcon sx={styles.syncIcon} />
+          <IconButton
+            size="large"
+            sx={styles.swapButton}
+            onClick={() => {
+              const t = fromCode;
+              setFromCode(toCode);
+              setToCode(t);
+            }}
+          >
+            <SyncAltIcon sx={{ fontSize: 20 }} />
           </IconButton>
         </Box>
 
-        <TextField
-          placeholder="To"
-          variant="outlined"
-          sx={styles.textFieldFlex12}
-          size="medium"
-          InputProps={{
-            startAdornment: <FlightLandingIcon sx={styles.iconMarginRight} />,
-            sx: styles.textFieldInputPropsNoHeight,
-          }}
-        />
+        <FormControl sx={styles.textFieldFlex12}>
+          <Select
+            value={toCode}
+            onChange={(e) => setToCode(e.target.value)}
+            displayEmpty
+            sx={styles.airportSelect}
+            startAdornment={<FlightLandingIcon sx={styles.iconAdornment} />}
+            renderValue={(v) => (
+              <Box sx={styles.flexCenter}>
+                {v ? AIRPORTS.find((a) => a.code === v)?.city : "To"}
+              </Box>
+            )}
+          >
+            {toAirports.map((a) => (
+              <MenuItem key={a.code} value={a.code}>
+                {a.city} ({a.code}) — {a.country}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
 
         <TextField
           label="Departure"
@@ -135,20 +205,7 @@ export default function FlightSearch() {
           value={departureDate}
           onChange={(e) => setDepartureDate(e.target.value)}
           sx={styles.textFieldFlex1}
-          InputProps={{
-            sx: styles.textFieldInputProps,
-          }}
-        />
-        <TextField
-          label="Returning"
-          type="date"
-          InputLabelProps={{ shrink: true }}
-          value={returnDate}
-          onChange={(e) => setReturnDate(e.target.value)}
-          sx={styles.textFieldFlex1}
-          InputProps={{
-            sx: styles.textFieldInputProps,
-          }}
+          InputProps={{ sx: styles.inputHeight }}
         />
 
         <TextField
@@ -157,7 +214,7 @@ export default function FlightSearch() {
           sx={styles.textFieldFlex12}
           InputProps={{
             startAdornment: <PersonIcon sx={styles.personIcon} />,
-            sx: styles.textFieldInputProps,
+            sx: styles.inputHeight,
           }}
         />
 
@@ -166,6 +223,7 @@ export default function FlightSearch() {
           color="primary"
           startIcon={<SearchIcon />}
           sx={styles.searchButton}
+          onClick={handleSearch}
         >
           Search
         </Button>
@@ -179,7 +237,6 @@ const styles = {
   select: {
     minWidth: 140,
     height: 40,
-    color: "text.secondary",
     fontWeight: 500,
     fontSize: "0.875rem",
     "& .MuiSelect-select": {
@@ -188,26 +245,21 @@ const styles = {
       pr: "14px !important",
     },
   },
+  airportSelect: {
+    height: "56px",
+    "& .MuiSelect-select": { display: "flex", alignItems: "center" },
+  },
   flexCenter: { display: "flex", alignItems: "center" },
   textFieldFlex12: { flex: 1.2 },
   textFieldFlex1: { flex: 1 },
-  iconMarginRight: { mr: 1, color: "#888" },
+  iconAdornment: { mr: 1, color: "#888" },
   personIcon: { mr: 1, color: "#888", fontSize: 20 },
-  textFieldInputProps: {
-    height: "56px",
-  },
-  textFieldInputPropsNoHeight: {},
-  iconButton: {
+  inputHeight: { height: "56px" },
+  swapButton: {
     bgcolor: "#F5F0FF",
     color: "primary.main",
     borderRadius: 1,
     "&:hover": { bgcolor: "#EDE7F6" },
   },
-  syncIcon: { fontSize: 20 },
-  searchButton: {
-    height: "56px",
-    px: 4,
-    fontSize: "1rem",
-    boxShadow: "none",
-  },
+  searchButton: { height: "56px", px: 4, fontSize: "1rem", boxShadow: "none" },
 };

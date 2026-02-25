@@ -96,6 +96,11 @@ export const TRIP_CATEGORY = {
   INTERNATIONAL: "international",
 };
 
+export const TRIP_CATEGORY_OPTIONS = [
+  { value: TRIP_CATEGORY.DOMESTIC, label: "Domestic" },
+  { value: TRIP_CATEGORY.INTERNATIONAL, label: "International" },
+];
+
 // Indian airports
 export const INDIAN_AIRPORTS = [
   {
