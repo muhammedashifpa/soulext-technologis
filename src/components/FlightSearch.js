@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
@@ -13,6 +13,8 @@ import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import FlightLandingIcon from "@mui/icons-material/FlightLand";
 import PersonIcon from "@mui/icons-material/Person";
 import SyncAltIcon from "@mui/icons-material/SyncAlt";
+import RestartAlt from "@mui/icons-material/RestartAlt";
+
 import {
   TRAVEL_CLASS_OPTIONS,
   TRIP_TYPE_OPTIONS,
@@ -24,7 +26,7 @@ import {
 import { useFlightStore } from "@/store/useFlightStore";
 
 export default function FlightSearch() {
-  const applySearch = useFlightStore((s) => s.applySearch);
+  const { applySearch, resetFilters, restSearchFilters } = useFlightStore();
 
   const [flightType, setFlightType] = useState("");
   const [travelClass, setTravelClass] = useState("");
@@ -32,6 +34,7 @@ export default function FlightSearch() {
   const [fromCode, setFromCode] = useState("");
   const [toCode, setToCode] = useState("");
   const [departureDate, setDepartureDate] = useState("");
+  const [travelers, setTravelers] = useState(1);
 
   const handleTripCategoryChange = (e) => {
     setTripCategory(e.target.value);
@@ -66,7 +69,29 @@ export default function FlightSearch() {
       from: fromCode,
       to: toCode,
       departureDate,
+      travelers: parseInt(travelers),
     });
+  };
+
+  useEffect(() => {
+    applySearch({
+      travelClass,
+      tripCategory,
+      from: fromCode,
+      to: toCode,
+      departureDate,
+      travelers: parseInt(travelers),
+    });
+  }, [travelClass, tripCategory, fromCode, toCode, departureDate, travelers]);
+  const resetSearchAndFilters = () => {
+    setFlightType("");
+    setTravelClass("");
+    setTripCategory("");
+    setFromCode("");
+    setToCode("");
+    setDepartureDate("");
+    setTravelers("");
+    restSearchFilters();
   };
 
   return (
@@ -212,13 +237,17 @@ export default function FlightSearch() {
           placeholder="Travellers"
           variant="outlined"
           sx={styles.textFieldFlex12}
+          value={travelers}
           InputProps={{
             startAdornment: <PersonIcon sx={styles.personIcon} />,
             sx: styles.inputHeight,
           }}
+          onChange={(e) => {
+            setTravelers(e.target.value);
+          }}
         />
 
-        <Button
+        {/* <Button
           variant="contained"
           color="primary"
           startIcon={<SearchIcon />}
@@ -226,6 +255,15 @@ export default function FlightSearch() {
           onClick={handleSearch}
         >
           Search
+        </Button> */}
+        <Button
+          variant="outlined"
+          color="primary"
+          startIcon={<RestartAlt />}
+          sx={styles.searchButton}
+          onClick={resetSearchAndFilters}
+        >
+          Reset filters
         </Button>
       </Stack>
     </Box>

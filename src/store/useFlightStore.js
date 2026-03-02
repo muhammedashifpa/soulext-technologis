@@ -78,6 +78,17 @@ export function sortFlights(flights, sortBy) {
     (a, b) => a.price + a.durationMins - (b.price + b.durationMins),
   );
 }
+export function calculateTotalPages(totalItems, itemsPerPage) {
+  return Math.ceil(totalItems / itemsPerPage);
+}
+export function paginateFlights(array, itemsPerPage, currentPage) {
+  // Human-readable page numbers usually start with 1, so we adjust for 0-based indexing
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = currentPage * itemsPerPage;
+
+  // Use slice() to get the relevant portion of the array
+  return array.slice(startIndex, endIndex);
+}
 
 function formatDateToDisplay(iso) {
   const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -134,6 +145,24 @@ export const useFlightStore = create(
         set({ travelClass }, false, "setTravelClass"),
       setSortBy: (sortBy) => set({ sortBy }, false, "setSortBy"),
 
+      //Rest the flights search to initial state
+      restSearchFilters: () => {
+        set(
+          (state) => {
+            return {
+              searchResults: mockFlights,
+              pendingFilters: { ...emptyFilters },
+              appliedFilters: { ...emptyFilters },
+              sortBy: SORT_BY.RECOMMENDED,
+              filteredFlights: mockFlights,
+              filterMeta: initialMeta,
+            };
+          },
+          false,
+          "resetFlightSearch",
+        );
+      },
+
       // Checkbox toggle — only updates pendingFilters, no visible change yet
       toggleFilter: (category, value) => {
         set(
@@ -184,11 +213,19 @@ export const useFlightStore = create(
       },
 
       // Search button — filters allFlights, resets sidebar
-      applySearch: ({ travelClass, tripCategory, from, to, departureDate }) => {
+      applySearch: ({
+        travelClass,
+        tripCategory,
+        from,
+        to,
+        departureDate,
+        travelers,
+      }) => {
         const { allFlights } = get();
 
         const results = allFlights.filter((flight) => {
           if (travelClass && flight.travelClass !== travelClass) return false;
+          if (travelers && flight.seatsRemaining < travelers) return false;
           if (tripCategory && flight.tripCategory !== tripCategory)
             return false;
           if (from && flight.departure.code !== from) return false;

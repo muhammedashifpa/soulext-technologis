@@ -2,26 +2,17 @@
 import React, { useState, useMemo } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Button from "@mui/material/Button";
-import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
-import FlightIcon from "@mui/icons-material/Flight";
 import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 import BoltIcon from "@mui/icons-material/Bolt";
 import LocalOfferIcon from "@mui/icons-material/LocalOffer";
+import Paper from "@mui/material/Paper";
 
 import { useFlightStore, sortFlights } from "@/store/useFlightStore";
-import { SORT_BY, REFUNDABLE_STATUS } from "@/constants/flightConstants";
-
-const refundableColor = (status) => {
-  if (status === REFUNDABLE_STATUS.FULLY) return "#198754";
-  if (status === REFUNDABLE_STATUS.NON) return "#EB5757";
-  if (status === REFUNDABLE_STATUS.PARTIALLY) return "#FD7E14";
-  return "#000000";
-};
+import { SORT_BY } from "@/constants/flightConstants";
+import { PaginatedFlightResults } from "./PaginatedFlightResults";
 
 const FlightResults = () => {
   const [tabValue, setTabValue] = useState(0);
@@ -120,132 +111,7 @@ const FlightResults = () => {
           />
         </Tabs>
       </Paper>
-
-      {currentFlights.map((flight) => (
-        <Paper key={flight.id} variant="outlined" sx={styles.flightCard}>
-          <Stack
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-            sx={styles.cardHeader}
-          >
-            <Stack direction="row" spacing={2} alignItems="center">
-              <Avatar sx={styles.airlineAvatar}>
-                <FlightIcon sx={{ fontSize: 18 }} />
-              </Avatar>
-              <Typography variant="subtitle1" sx={styles.airlineName}>
-                {flight.airlineName}
-              </Typography>
-            </Stack>
-            <Typography variant="body1" color="text.primary">
-              Travel Class:{" "}
-              <Typography component="span" fontWeight="600">
-                {flight.travelClass}
-              </Typography>
-            </Typography>
-          </Stack>
-
-          <Stack direction="row" spacing={3} alignItems="center">
-            {/* Flight route + timing */}
-            <Box sx={styles.leftOrangeBox}>
-              <Box>
-                <Typography sx={styles.dateText}>
-                  {flight.departureDate}
-                </Typography>
-                <Typography sx={styles.timeText}>
-                  {flight.departureTime}
-                </Typography>
-                <Typography sx={styles.airportText}>
-                  {flight.departure.city}
-                </Typography>
-                <Typography sx={styles.airportText}>
-                  {flight.departure.country}
-                </Typography>
-              </Box>
-
-              <Box sx={styles.durationContainer}>
-                <Typography sx={styles.durationText}>
-                  {flight.durationText}
-                </Typography>
-                <Box sx={styles.lineContainer}>
-                  <Box sx={styles.line} />
-                  <FlightIcon
-                    sx={{ fontSize: 24, color: "#ccc", mx: 1, rotate: "90deg" }}
-                  />
-                  <Box sx={styles.line} />
-                </Box>
-                <Typography
-                  variant="caption"
-                  color="text.secondary"
-                  sx={{ mt: 0.5 }}
-                >
-                  {flight.stops === 0
-                    ? "Nonstop"
-                    : flight.stops === 1
-                      ? "1 Stop"
-                      : `${flight.stops} Stops`}
-                </Typography>
-              </Box>
-
-              <Box>
-                <Typography sx={styles.spacerText}>·</Typography>
-                <Typography sx={styles.timeText}>
-                  {flight.arrivalTime}
-                </Typography>
-                <Typography sx={styles.airportText}>
-                  {flight.arrival.city}
-                </Typography>
-                <Typography sx={styles.airportText}>
-                  {flight.arrival.country}
-                </Typography>
-              </Box>
-            </Box>
-
-            {/* Price + book */}
-            <Box sx={styles.pricingBox}>
-              <Typography sx={styles.priceText}>
-                {flight.formattedPrice}
-              </Typography>
-              <Button
-                variant="contained"
-                color="primary"
-                sx={styles.bookButton}
-                disableElevation
-              >
-                Book Now
-              </Button>
-            </Box>
-          </Stack>
-
-          <Stack
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-            sx={styles.footerContainer}
-          >
-            <Typography variant="caption" color="text.secondary">
-              {flight.seatsRemaining} seats remaining
-            </Typography>
-            <Typography
-              variant="caption"
-              sx={{
-                ...styles.refundableText,
-                color: refundableColor(flight.refundableStatus),
-              }}
-            >
-              {flight.refundableStatus}
-            </Typography>
-            <Button
-              variant="text"
-              size="small"
-              color="primary"
-              sx={styles.viewDetailsBtn}
-            >
-              View flight details
-            </Button>
-          </Stack>
-        </Paper>
-      ))}
+      <PaginatedFlightResults currentFlights={currentFlights} />
     </Box>
   );
 };
